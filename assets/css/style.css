@@ -1,6 +1,11 @@
-.main-container{margin-left:auto;margin-right:auto;position:relative}
+.main-container{
+	margin-left:auto;
+	margin-right:auto;
+	position:relative;
+	color: #434343}
 
-.home-container{max-width:900px; 
+.home-container{
+	max-width:900px; 
 	padding-left: 25px; 
 	padding-right: 25px; 
 	background-color: white;
@@ -8,21 +13,71 @@
 	border-color: rgb(255, 230, 234);
 	text-align: center;
 	padding-bottom: 15px;
+	color: #434343;
 }
 
-.home-title{margin-top:65px;
+.home-title{
+	margin-top:65px;
 }
 
-.links-container a{color: black}
+#right{
+	padding-left: 90%;
+	padding-top: 0px;
+	padding-bottom: 0px;
+}
 
-#ok a{color: black}
+#homeButton{
+	font-family: "adelle-sans",sans-serif;
+	text-align: right;
+	font-size: 16px;
+	color: #434343;
+	word-spacing: 12px;
+}
+
+.links-container a{
+	color: #434343;
+}
+
+#ok a{
+	color: #434343;
+}
 
 #resume a{
-	color: black;
+	color: #434343;
+}
+
+#vadesc{
+	font-family: "proxima-nova",sans-serif;
+    font-weight: 300;
+    letter-spacing: .3px;
+    color: #b0b4b6;
+    font-size: 11px;
+    text-transform: uppercase;
+    position: relative;
+	margin: auto;
+	width: 100%;
+    object-fit: cover;
+    -webkit-transform:translateY(450%);
+}
+
+#vacont{
+	/*position: absolute;*/
+	height: 170px;
+	width:100%;
+	object-fit:cover;
+	background-color: white;
+}
+
+#vaimg{
+	position: relative;
+	margin: auto;
+	width: 100%;
+    object-fit: cover;
+    -webkit-transform:translateY(200%);
 }
 
 .link {
-	color: black;
+	color: #434343;
 }
 
 #line{
@@ -57,13 +112,21 @@ h1{
 /*.home-experience h1{animation:fadein .5s both;animation-delay:.4s}*/
 .experience-grid{animation:fadein .5s both;animation-delay:.45s;display:flex;
 }
-.experience-item{color:inherit;
+.experience-item{
+	color:inherit;
 	margin:5px 5px 25px;
 	margin-left: 0px;
-	padding:15px 15px 25px;position:relative;
-	text-decoration:none;width:calc(50% - 10px);-webkit-backface-visibility:hidden;-webkit-transform-style:preserve-3d}
-.experience-item h2{text-align: left;
-	font-size:20px;font-weight:400;-webkit-backface-visibility:hidden;-webkit-transform-style:preserve-3d;font-size: 17px;}
+	padding:15px 15px 25px;
+	position:relative;
+	text-decoration:none;
+	width:calc(50% - 10px);-webkit-backface-visibility:hidden;-webkit-transform-style:preserve-3d
+}
+
+.experience-item h2{
+	text-align: left;
+	font-size:20px;
+	font-weight:400;-webkit-backface-visibility:hidden;-webkit-transform-style:preserve-3d;font-size: 17px;}
+
 .experience-item h3{
 	text-align: left;
 	color:rgba(58,71,80,.6);font-size:15px;-webkit-backface-visibility:hidden;-webkit-transform-style:preserve-3d;
