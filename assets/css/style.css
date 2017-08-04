@@ -2,7 +2,8 @@
 	margin-left:auto;
 	margin-right:auto;
 	position:relative;
-	color: #434343}
+	color: #434343;
+}
 
 .home-container{
 	max-width:900px; 
@@ -12,7 +13,7 @@
 	border-style: solid;
 	border-color: rgb(255, 230, 234);
 	text-align: center;
-	padding-bottom: 15px;
+	padding-bottom: 40px;
 	color: #434343;
 }
 
@@ -27,7 +28,9 @@
 }
 
 #homeButton{
-	font-family: "adelle-sans",sans-serif;
+	font-family: "Helvetica Neue","Arial","sans-serif";
+	letter-spacing: 2.25px;
+	
 	text-align: right;
 	font-size: 16px;
 	color: #434343;
@@ -35,7 +38,12 @@
 }
 
 .links-container a{
+	font-family: "Helvetica Neue","Arial","sans-serif";
+	letter-spacing: 2.25px;
+	text-transform: uppercase;
 	color: #434343;
+	text-decoration: none;
+	font-size: 14px;
 }
 
 #ok a{
@@ -86,6 +94,7 @@
 
 #Sarah {
 	margin-top: -40px;
+	margin-bottom: 10px;
     font-family: 'Satisfy', cursive;
     font-size: 40px;
     text-decoration: none;
@@ -103,33 +112,42 @@ h1{
 	font-family: 'Satisfy', cursive;
 	font-size: 25px;
 	text-decoration: underline;
-	padding-top: 30px;
+	padding-top: 60px;
 }
 
-.about-text,.article-container .content,.contact-text,.serif,.social-media-container h2,.work-item h3{font-family: 'Open Sans', sans-serif;}
+.about-text,.article-container .content,.contact-text,.serif,.social-media-container h2,.work-item h3{
+	/*font-family: 'Open Sans', sans-serif;*/
+	font-family: "Helvetica Neue","Arial","sans-serif";
+	letter-spacing: 2.25px;
+}
 
 .home-experience{padding-top:15px}
 /*.home-experience h1{animation:fadein .5s both;animation-delay:.4s}*/
 .experience-grid{animation:fadein .5s both;animation-delay:.45s;display:flex;
 }
 .experience-item{
+	text-transform: uppercase;
+	letter-spacing: 1.5px;
 	color:inherit;
 	margin:5px 5px 25px;
 	margin-left: 0px;
 	padding:15px 15px 25px;
 	position:relative;
 	text-decoration:none;
-	width:calc(50% - 10px);-webkit-backface-visibility:hidden;-webkit-transform-style:preserve-3d
+	width:calc(50% - 10px);-webkit-backface-visibility:hidden;-webkit-transform-style:preserve-3d;
 }
 
 .experience-item h2{
 	text-align: left;
-	font-size:20px;
-	font-weight:400;-webkit-backface-visibility:hidden;-webkit-transform-style:preserve-3d;font-size: 17px;}
+	font-size:14px;
+	font-weight:400;-webkit-backface-visibility:hidden;-webkit-transform-style:preserve-3d;
+}
 
 .experience-item h3{
 	text-align: left;
-	color:rgba(58,71,80,.6);font-size:15px;-webkit-backface-visibility:hidden;-webkit-transform-style:preserve-3d;
+	color:rgba(58,71,80,.6);
+	font-size:11px;
+	-webkit-backface-visibility:hidden;-webkit-transform-style:preserve-3d;
 	margin: -10px;
     margin-left: 0px;
     font-weight: normal;
@@ -164,7 +182,9 @@ h1{
 	/*transformtranslateY*/
 	/*width:250px;*/
 	background:rgb(255, 230, 234);
-	font-family: 'Open Sans', sans-serif;
+	/*font-family: 'Open Sans', sans-serif;*/
+	font-family: "Helvetica Neue","Arial","sans-serif";
+	letter-spacing: 2.25px;
 	font-size:19px;
 	font-weight:500;
 	padding:15px 20px
@@ -172,7 +192,7 @@ h1{
 
 .links-container{
 	text-align: center;
-	padding: 10px;
+	padding: 10px 10px 0px 10px;
 	word-spacing: 12px;
 }
 
@@ -188,7 +208,7 @@ h1{
 .social-media-container li:hover{opacity:1}
 .social-media-container a{display:inline-block}
 .social-media-container img{transition:100ms;width:28px;}
-.social-media-container h2{font-size:13px;margin-top:5px}
+.social-media-container h2{font-size:13px;letter-spacing: 1.5px;margin-top:5px}
 
 #med {
     width: 21.5px;
