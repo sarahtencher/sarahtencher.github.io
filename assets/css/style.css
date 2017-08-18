@@ -114,6 +114,17 @@
     line-height: 1.75;
 }
 
+#okbold {
+    text-align: justify;
+    font-family: "Helvetica Neue","Arial","sans-serif";
+    letter-spacing: 2.25px;
+    color: #434343;
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 1.75;
+    font-weight: bold;
+}
+
 h1{
 	font-weight: normal;
 	font-size: 20px;
@@ -121,6 +132,19 @@ h1{
 	font-family: "Helvetica Neue","Arial","sans-serif";
 	letter-spacing: 1.5px;
 	padding-top: 60px;
+}
+
+h2{
+	font-weight: normal;
+	font-size: 16px;
+	text-transform: uppercase;
+	font-family: "Helvetica Neue","Arial","sans-serif";
+	letter-spacing: 1.5px;
+}
+
+ul li{
+	padding: 10px;
+	list-style: none;
 }
 
 .about-text,.article-container .content,.contact-text,.serif,.social-media-container h2,.work-item h3{
@@ -277,4 +301,32 @@ h1{
 
 .bold{
 	font-weight: bold;
+}
+
+.OffspringImages{
+	padding: 15px 0px 15px 0px;
+}
+
+#O1{
+	/*height: 265px;*/
+	width: 100%;
+}
+
+#O2{
+	padding: 15px 30px 15px 30px;
+	float: right;
+	height: 361px; 
+}
+
+#O3{
+	width: 100%;
+}
+
+#O4{
+	height:286px;
+	float: right;
+}
+
+p{
+	padding: 15px;
 }
