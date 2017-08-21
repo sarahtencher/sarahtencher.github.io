@@ -53,6 +53,10 @@
 	color: #434343;
 }
 
+#resume a:hover{
+	color: #999; /*HoverText*/
+}
+
 #vadesc{
 	font-family: "proxima-nova",sans-serif;
     font-weight: 300;
@@ -87,6 +91,10 @@
 	text-decoration:none;
 	color: #434343;
 	/*text-transform: uppercase;*/
+}
+
+#aboot:hover {
+	color: #999;
 }
 
 #line{
@@ -199,7 +207,7 @@ ul li{
     font-weight: normal;
 }
 .experience-item:after{
-	/*background:rgb(255, 230, 234);*/
+	background: #f0f0f5;
 	content:"";
 	height:100%;
 	left:0;
