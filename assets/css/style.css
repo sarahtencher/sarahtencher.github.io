@@ -177,7 +177,12 @@ ul li{
 
 .home-experience{padding-top:15px}
 /*.home-experience h1{animation:fadein .5s both;animation-delay:.4s}*/
-.experience-grid{animation:fadein .5s both;animation-delay:.45s;display:flex;
+.experience-grid{
+	animation:fadein .5s both;
+	animation-delay:.45s;
+	display:flex;
+	margin: auto;    
+	justify-content: center;
 }
 .experience-item{
 	text-transform: uppercase;
@@ -188,7 +193,11 @@ ul li{
 	padding:15px 15px 25px;
 	position:relative;
 	text-decoration:none;
-	width:calc(50% - 10px);-webkit-backface-visibility:hidden;-webkit-transform-style:preserve-3d;
+	/*width:calc(50% - 10px);*/
+	-webkit-backface-visibility:hidden;
+	-webkit-transform-style:preserve-3d;
+	/*width: 250px;*/
+	width: calc(30% - 5px);
 }
 
 .experience-item h2{
@@ -223,18 +232,24 @@ ul li{
 	-moz-transform:scale(1);
 	-ms-transform:scale(1);
 	-o-transform:scale(1);
-	transform:scale(1)}
+	transform:scale(1)
+}
+
 .experience-item-img{
 	background:rgba(143,172,192,.2);
 	border-radius:2px;
-	height:170px;margin-bottom:15px;
+	height:250px;
+	margin-bottom:15px;
 	overflow:hidden;
 	position:relative;
-	width:100%}
+	width:100%
+}
 .experience-item-img img{
 	height:100%;
 	width:100%;
-	object-fit:cover}
+	object-fit:cover;
+}
+
 .experience-item-img:before{
 	background:0 0;
 	content:"";
@@ -289,7 +304,8 @@ ul li{
 }
 
 #resume{
-	padding-bottom: 20px;
+	text-align: center;
+	/*padding-bottom: 20px;*/
 }
 
 .social-media-container li{
@@ -379,4 +395,32 @@ ul li{
 
 p{
 	padding: 15px;
+}
+
+#underline{
+	text-decoration: underline;
+}
+
+#floatL{
+	float: left;
+	padding-bottom: 29px;
+}
+
+#caption{
+    font-family: "Helvetica Neue","Arial","sans-serif";
+    letter-spacing: 1.5px;
+    color: #434343;
+    text-decoration: none;
+    font-size: 11px;
+    line-height: 1.75;
+}
+
+#center{
+	text-align: center;
+}
+
+#leftAligned{
+	padding-left: 15px; 
+	text-align: left;
+    margin-bottom: 5px;
 }
