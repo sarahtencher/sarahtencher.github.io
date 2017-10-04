@@ -380,9 +380,9 @@ ul li{
 }
 
 #C4{
-	width: 56.1%;
-	float: left;
-	padding-bottom: 0px;
+	/*width: 56.1%;*/
+	float: right;
+	padding-bottom: 5px;
 	padding-top: 20px;
 }
 
