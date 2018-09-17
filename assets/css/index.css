@@ -1,0 +1,127 @@
+button, input[type=submit], input[type=reset] {
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+}
+
+div.v-centerizer {
+  height: 100%;
+  width: 1px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+body {
+  margin: 0;
+  padding: 60px 5%;
+}
+
+/* Heading */
+div.heading {
+  color: #282829;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 32px;
+  letter-spacing: 0.2px;
+  text-align: center;
+}
+
+/* Navigation */
+div.navigation {
+  margin: 20px 0 64px;
+  text-align: center;
+}
+div.navigation a {
+  color: #282829;
+  display: inline-block;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  text-decoration: none;
+  text-transform: uppercase;
+  vertical-align: middle;
+}
+div.navigation a + a {
+  margin-left: 24px;
+}
+
+div#home {
+  width: 100%;
+  /* List Item */
+  /* Image Container */
+  /* Details */
+}
+div#home div.list-item {
+  display: flex;
+  /* {_even} */
+}
+div#home div.list-item + div.list-item {
+  margin-top: 80px;
+}
+div#home div.list-item._even {
+  flex-direction: row-reverse;
+}
+div#home div.image-container {
+  background-color: #2052C1;
+  box-sizing: border-box;
+  display: inline-block;
+  font-size: 0;
+  padding: 3%;
+  text-align: center;
+  width: 33%;
+}
+div#home div.image-container img {
+  display: inline-block;
+  vertical-align: middle;
+  max-width: calc(100% - 1px);
+  height: auto;
+}
+div#home div.details {
+  background-color: #F0F1F2;
+  box-sizing: border-box;
+  display: inline-block;
+  padding: 50px 60px;
+  width: 67%;
+  /* Title */
+  /* Subtitle */
+  /* Description */
+  /* [Learn More] */
+}
+div#home div.details div.title {
+  color: #282829;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 21px;
+}
+div#home div.details div.subtitle {
+  color: #2052C1;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  margin-top: 4px;
+  text-transform: uppercase;
+}
+div#home div.details div.description {
+  color: #282829;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  margin-top: 18px;
+}
+div#home div.details button.learn-more {
+  border: 1px solid #282829;
+  border-radius: 2px;
+  color: #282829;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  margin-top: 32px;
+  padding: 10px 14px;
+}
+
+/*# sourceMappingURL=index.css.map */
