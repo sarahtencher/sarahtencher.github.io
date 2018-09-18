@@ -14,36 +14,7 @@ div.v-centerizer{
     vertical-align: middle;
 }
 
-
 body{
     margin: 0;
     padding: 60px 5%;
 }
-
- /* Heading */
- div.heading{
-     color: $color-base-1;
-     @include font-bold;
-	 font-size: 32px;
-     letter-spacing: 0.2px;
-     text-align: center;
- }
-
- /* Navigation */
- div.navigation{
-     margin: 20px 0 64px;
-     text-align: center;
-
-     a{
-         color: $color-base-1;
-         display: inline-block;
-         @include font-regular;
-         font-size: 14px;
-         text-decoration: none;
-         text-transform: uppercase;
-         vertical-align: middle;
-
-         & + a{  margin-left: 24px  }
-     }
-
- }

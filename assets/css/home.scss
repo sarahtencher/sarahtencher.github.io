@@ -1,13 +1,49 @@
 
-
 div#home{
     width: 100%;
 
-    /* List Item */
-    div.list-item{
-        display: flex;
+    /* Heading */
+    div.heading{
+        color: $color-base-1;
+        @include font-bold;
+        font-size: 32px;
+        letter-spacing: 0.2px;
+        text-align: center;
+    }
 
-        & + div.list-item{  margin-top: 80px  }
+    /* Navigation */
+    div.navigation{
+        margin: 20px 0 64px;
+        text-align: center;
+
+        a{
+            color: $color-base-1;
+            display: inline-block;
+            @include font-regular;
+            font-size: 14px;
+            text-decoration: none;
+            text-transform: uppercase;
+            vertical-align: middle;
+
+            & + a{  margin-left: 24px  }
+        }
+    }
+
+    /* List Item */
+    a.list-item{
+        cursor: pointer;
+        display: flex;
+        text-decoration: none;
+        transition: transform ease-out 180ms;
+        // align-items: flex-start;
+        // align-content: flex-start;
+
+        & + a.list-item{  margin-top: 80px  }
+
+        &:hover{
+            box-shadow: -1px 3px 10px 0 rgba(0,0,0,.1);
+            transform: scale(1.0125);
+        }
 
 
         /* {_even} */
@@ -18,7 +54,7 @@ div#home{
 
         /* Image Container */
         div.image-container{
-            background-color: $color-accent-1;
+            background-color: $color-accent-2;
             box-sizing: border-box;
             display: inline-block;
             font-size: 0;
@@ -26,14 +62,16 @@ div#home{
             text-align: center;
             width: 33%;
 
+            // align-self: flex-start;
+
+            // display: flex;
+
             img{
                 display: inline-block;
                 vertical-align: middle;
                 max-width: calc(100% - 1px);
                 height: auto;
             }
-
-
         }
 
         /* Details */
@@ -53,7 +91,7 @@ div#home{
 
             /* Subtitle */
             div.subtitle{
-                color: $color-accent-1;
+                color: darken(saturate($color-accent-2, 2%), 4%);
                 @include font-regular;
                 font-size: 12px;
                 margin-top: 4px;

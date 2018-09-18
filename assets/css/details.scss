@@ -1,0 +1,94 @@
+
+div.details{
+
+    /* Header */
+    div.header{
+        margin-bottom: 48px;
+
+        /* Heading */
+        div.heading{
+            color: $color-base-1;
+            display: inline-block;
+            @include font-bold;
+            font-size: 32px;
+            letter-spacing: 0.2px;
+            text-align: left;
+            vertical-align: middle;
+        }
+
+        /* Navigation */
+        div.navigation{
+            display: inline-block;
+            padding-top: 8px;
+            position: absolute;
+            right: 5%;
+            vertical-align: middle;
+
+            a{
+                color: $color-base-1;
+                display: inline-block;
+                @include font-regular;
+                font-size: 14px;
+                text-decoration: none;
+                text-transform: uppercase;
+                vertical-align: middle;
+
+                & + a{  margin-left: 24px  }
+            }
+        }
+    }
+
+    h1{
+        color: $color-base-1;
+        @include font-bold;
+        font-size: 24px;
+        margin-bottom: 24px;
+        text-align: center;
+    }
+
+    /* Section */
+    div.section{
+
+        & + div.section{  margin-top: 36px  }
+
+        h2{
+            color: $color-base-1;
+            @include font-bold;
+            font-size: 20px;
+            margin-bottom: 8px;
+        }
+
+        p{
+            color: $color-base-1;
+            @include font-regular;
+            font-size: 16px;
+            line-height: 24px;
+        }
+
+        ul{
+
+            li{
+                color: $color-base-1;
+                @include font-regular;
+                font-size: 16px;
+                line-height: 24px;
+            }
+        }
+
+        video{
+
+        }
+
+        img{
+
+        }
+
+        /* Caption */
+        div.caption{
+            color: $color-base-1;
+            @include font-regular;
+            font-size: 12px;
+            text-align: center;
+        }
+    }
+}
