@@ -31,46 +31,40 @@ div#home{
 
     /* List Item */
     a.list-item{
+        background-color: #fff;
+        box-shadow: -1px 3px 10px 0 rgba(0,0,0,.04);
         cursor: pointer;
         display: flex;
+        position: relative;
         text-decoration: none;
         transition: transform ease-out 180ms;
-        // align-items: flex-start;
-        // align-content: flex-start;
+
 
         & + a.list-item{  margin-top: 80px  }
 
         &:hover{
             box-shadow: -1px 3px 10px 0 rgba(0,0,0,.1);
-            transform: scale(1.0125);
+            transform: translate(0,-10px);
         }
 
 
         /* {_even} */
-        &._even{
-            flex-direction: row-reverse;
-        }
+        &._even{  flex-direction: row-reverse  }
     }
 
         /* Image Container */
         div.image-container{
             background-color: $color-accent-2;
             box-sizing: border-box;
-            display: inline-block;
             font-size: 0;
             padding: 3%;
-            text-align: center;
-            width: 33%;
-
-            // align-self: flex-start;
-
-            // display: flex;
+            width: 33.33%;
 
             img{
                 display: inline-block;
-                vertical-align: middle;
-                max-width: calc(100% - 1px);
                 height: auto;
+                max-width: calc(100% - 1px);
+                vertical-align: middle;
             }
         }
 
@@ -78,9 +72,8 @@ div#home{
         div.details{
             background-color: $color-base-2;
             box-sizing: border-box;
-            display: inline-block;
             padding: 50px 60px;
-            width: 67%;
+            width: 67.67%;
 
             /* Title */
             div.title{

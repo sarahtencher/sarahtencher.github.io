@@ -9,7 +9,7 @@ button, input[type="submit"], input[type="reset"] {
 }
 
 div.v-centerizer{
-    height: 100%; width: 1px;
+    height: 50%; width: 1px; // height: auto?
     display: inline-block;
     vertical-align: middle;
 }

@@ -1,0 +1,124 @@
+
+<html>
+    <head>
+        <title>Sarah Tencher</title>
+        <link rel="stylesheet" href="../assets/css/index.css">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:400,500" rel="stylesheet">
+    </head>
+    <body>
+
+        <!-- Details -->
+        <div class="details">
+
+
+            <!-- Header -->
+            <div class="header">
+
+                <!-- Heading -->
+                <a href="../index1.html" class="heading">Sarah Tencher</a>
+
+                <!-- Navigation -->
+                <div class="navigation">
+                    <a href="../index1.html">Work</a>
+                    <a href="pages/about.html">About</a>
+                    <a href="../SarahTencher.pdf">Resume</a>
+                </div>
+            </div>
+
+            <!-- Page Heading -->
+            <h1>Understand.com</h1>
+
+
+            <!-- Section // Goal -->
+            <div class="section">
+
+                <h2>Goals</h2>
+                <p>
+                    Understand sells 3D medical animations on a subscription basis to customers around the world. These
+                    customers embed the Understand player into their websites via iFrame for patients to view and become
+                    better educated about the medical procedures offered.
+                    The Understand Player was redesigned with 2 main goals in mind: update the look and feel of the player
+                    and increase user interaction. Currently, 22% of users interact with the player.
+                </p>
+            </div>
+
+
+            <!-- Section // Design -->
+            <div class="section">
+                <h2>Design</h2>
+
+                <p>
+                    Previously, the animation menu was heavily text based with videos hidden behind
+                    menu catagories. The new player exposes videos more clearly and draws attention with
+                    graphics and large headings, as well as details about video views and likes. With a clear
+                    tab menu design there is now more space for videos, ideally encouraging users to explore
+                    animation categories and videos more.
+
+                    The second main improvement was removing unused features and redesigning the most used features
+                    to be more accesible and user friendly. Features such as the ability to share and like videos have
+                    come to be expected in modern media players and were therefore added to the new player.
+                </p>
+            </div>
+
+
+            <!-- Section // Development -->
+            <div class="section">
+                <h2>Development</h2>
+
+                <p>
+                    After the design was complete, I created a fully functional prototype with HTML, CSS and JavaScript. Usually
+                    after this step, I hand the designs and prototype to the front-end developers and aid them with any questions they
+                    may have. For the first time, I was given the opportunity to test my React skills and really put them to use. While the
+                    main structure and data gathering for the app was done by the development lead, I made all of the components for both
+                    the desktop and mobile versions of the menu and player. This was not only such a great learning experience, but I also
+                    felt so proud to take my designs farther than I ever had before.
+                </p>
+            </div>
+
+
+            <!-- Section // Challenges -->
+            <div class="section">
+                <h2>Challenges</h2>
+                <p>
+                    One major challenge was redesigning the seekbar to include both steps and doctors notes. Each video
+                    is broken up into logical chunks called steps which were previously displayed as a list to the
+                    side of each playing video. Analytics showed that only 1.5% of viewers actually clicked on these steps.
+                    In the redesign, I displayed the steps as notches in the seekbar as a way to save space as well as give them
+                    a contextually logical location. When users hover over the notches, tooltips appears displaying relevant step
+                    information and the ability to seek to this part of the video. Doctors also have the opportunity to attach a
+                    doctor's note to each step. This is a legacy feature that needed to be supported, despite its small current
+                    utility. I designed the notes as large popovers that appear above the current step notch as the video enters
+                    each step. One note is shown at a time and is shown until the user takes an action close it. Current use trends
+                    show that users rarely re-open the doctor's notes after actively closing them, therefore in the redesign, after
+                    actively closing the note the user has to rewind the video and enter the step again to view the note again. This
+                    decsion was made in an attempt to save space and increase usability.
+
+                    The doctor's notes did not become less of a challenge after the design was complete. Implementing these notes in React
+                    also proved to be a new and interesting challenge. Since these doctor's notes are fairly large and are placed based on
+                    the location of each step, some of the notes bled outside of the visible part of the player. To determine when to restyle
+                    these overflowing notes, I had to calculate each notes location and size and whether or not it was in the viewport. When
+                    React renders a view, it starts by rendering the children and then each childs parents. Since I was trying to determine the
+                    parents coordinates in order to render its children I was running into a lot of errors. The solution was using ref's and
+                    accessing the DOM - ...
+                </p>
+            </div>
+
+
+            <!-- Section // Challenges -->
+            <div class="section">
+                <h2>Future</h2>
+
+                <p>
+                    I am beyond excited for this new player and menu to go live and be viewed by millions of patients and doctors each year. Just
+                    as we have been, we will continue to collect user inteaction data and compare it with previous data to determine which design
+                    decisions were successful and which ones were not. While another re-design in the near future is unlikely, I am looking forward
+                    to synthesizing the data we recieve to encouraging further improvements to the media player.
+                </p>
+            </div>
+
+
+        </div>
+        <!-- /Details-->
+
+  </body>
+</html>

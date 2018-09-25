@@ -1,6 +1,4 @@
-
-div.details{
-
+div.about{
     /* Header */
     div.header{
         margin-bottom: 48px;
@@ -39,24 +37,32 @@ div.details{
         }
     }
 
-    h1{
-        color: $color-base-1;
-        @include font-bold;
-        font-size: 24px;
-        margin-bottom: 24px;
-        text-align: center;
+    /* Profile Picture */
+    div.profile-pic{
+        display: inline-block;
+        vertical-align: middle;
+        width: 240px; height: 240px;
+
+        img{
+            border-radius: 50%;
+            object-fit: cover;
+            width: 100%; height: 100%;
+        }
     }
 
-    /* Section */
-    div.section{
+    /* Details */
+    div.details{
+        display: inline-block;
+        margin-left: 40px;
+        vertical-align: middle;
+        width: calc(100% - 240px - 46px);
 
-        & + div.section{  margin-top: 36px  }
-
-        h2{
+        h1{
             color: $color-base-1;
             @include font-bold;
             font-size: 20px;
             margin-bottom: 8px;
+            text-align: left;
         }
 
         p{
@@ -64,32 +70,16 @@ div.details{
             @include font-regular;
             font-size: 16px;
             line-height: 24px;
+            margin-bottom: 12px;
         }
 
-        ul{
-
-            li{
-                color: $color-base-1;
-                @include font-regular;
-                font-size: 16px;
-                line-height: 24px;
-            }
-        }
-
-        video{
-
-        }
-
-        img{
-
-        }
-
-        /* Caption */
-        div.caption{
+        div.contact, a.contact{
             color: $color-base-1;
             @include font-regular;
-            font-size: 12px;
-            text-align: center;
+            font-size: 16px;
+            line-height: 24px;
+            margin-top: 4px;
+            text-decoration: none;
         }
     }
 }
