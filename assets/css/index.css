@@ -1,3 +1,7 @@
+.no-top-margin {
+  margin-top: 0 !important;
+}
+
 button, input[type=submit], input[type=reset] {
   background: none;
   color: inherit;
@@ -17,7 +21,7 @@ div.v-centerizer {
 
 body {
   margin: 0;
-  padding: 60px 5%;
+  padding: 60px 15%;
 }
 
 div#home {
@@ -153,7 +157,7 @@ div.details div.header div.navigation {
   display: inline-block;
   padding-top: 8px;
   position: absolute;
-  right: 5%;
+  right: 15%;
   vertical-align: middle;
 }
 div.details div.header div.navigation a {
@@ -178,7 +182,10 @@ div.details h1 {
   text-align: center;
 }
 div.details div.section {
-  /* Caption */
+  font-size: 0;
+  /* Video */
+  /* Images */
+  /* Image */
 }
 div.details div.section + div.section {
   margin-top: 36px;
@@ -204,12 +211,32 @@ div.details div.section ul li {
   font-size: 16px;
   line-height: 24px;
 }
-div.details div.section div.caption {
+div.details div.section div.image {
+  margin: 40px 0;
+  /* Caption */
+  /* {_half} */
+}
+div.details div.section div.image img {
+  margin: 0;
+  width: 100%;
+}
+div.details div.section div.image div.caption {
   color: #282829;
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 12px;
   text-align: center;
+}
+div.details div.section div.image div.caption + img {
+  margin-top: 12px;
+}
+div.details div.section div.image._half {
+  display: inline-block;
+  vertical-align: top;
+  width: 49%;
+}
+div.details div.section div.image._half:nth-child(even) {
+  margin-left: 2%;
 }
 
 div.about {

@@ -22,7 +22,7 @@ div.details{
             display: inline-block;
             padding-top: 8px;
             position: absolute;
-            right: 5%;
+            right: 15%;
             vertical-align: middle;
 
             a{
@@ -49,6 +49,7 @@ div.details{
 
     /* Section */
     div.section{
+        font-size: 0;
 
         & + div.section{  margin-top: 36px  }
 
@@ -76,20 +77,46 @@ div.details{
             }
         }
 
-        video{
+        /* Video */
+        video{}
 
-        }
+        /* Images */
+        div.images{}
 
-        img{
+            /* Image */
+            div.image{
+                margin: 40px 0;
 
-        }
 
-        /* Caption */
-        div.caption{
-            color: $color-base-1;
-            @include font-regular;
-            font-size: 12px;
-            text-align: center;
-        }
+
+                img{
+                    margin: 0;
+                    width: 100%;
+                }
+
+                /* Caption */
+                div.caption{
+                    color: $color-base-1;
+                    @include font-regular;
+                    font-size: 12px;
+                    text-align: center;
+
+                    & + img{
+                        margin-top: 12px;
+                    }
+                }
+
+                /* {_half} */
+                &._half{
+                    display: inline-block;
+                    vertical-align: top;
+                    width: 49%;
+
+                    &:nth-child(even){
+
+                            margin-left: 2%;
+                    }
+                }
+            }
     }
 }
