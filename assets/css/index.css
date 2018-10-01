@@ -32,7 +32,6 @@ div#home {
   /* List Item */
   /* Image Container */
   /* Details */
-  /* List Item */
 }
 div#home div.heading {
   color: #282829;
@@ -63,30 +62,30 @@ div#home div.items {
   font-size: 0;
 }
 div#home a.list-item {
-  background-color: #fff;
-  box-shadow: -1px 3px 10px 0 rgba(0, 0, 0, 0.04);
+  background-color: #FFF;
   display: inline-block;
   cursor: pointer;
   position: relative;
   text-decoration: none;
   vertical-align: top;
-  width: 30%;
+  width: 48%;
 }
-div#home a.list-item:nth-child(2), div#home a.list-item:nth-child(3), div#home a.list-item:nth-child(5) {
-  margin-left: 3.33%;
+div#home a.list-item:nth-child(even) {
+  margin-left: 4%;
+}
+div#home a.list-item:nth-child(3), div#home a.list-item:nth-child(4), div#home a.list-item:nth-child(5) {
+  margin-top: 80px;
 }
 div#home div.image-container {
   background-color: #9F9FED;
   box-sizing: border-box;
   font-size: 0;
-  text-align: center;
   width: 100%;
 }
 div#home div.image-container img {
-  display: inline-block;
+  display: block;
   height: auto;
-  max-width: calc(100% - 1px);
-  vertical-align: middle;
+  width: 100%;
 }
 div#home div.details {
   background-color: #F0F1F2;
@@ -130,21 +129,14 @@ div#home div.details button.learn-more {
   margin-top: 32px;
   padding: 10px 14px;
 }
-@media (max-width: 768px) {
-  div#home a.list-item {
-    width: 48%;
-  }
-  div#home a.list-item:nth-child(3), div#home a.list-item:nth-child(5) {
-    margin-left: 0;
-  }
-  div#home a.list-item:nth-child(even) {
-    margin-left: 4%;
-  }
-}
-@media (max-width: 480px) {
+@media (max-width: 645px) {
   div#home a.list-item {
     margin-left: 0 !important;
+    margin-top: 80px;
     width: 100%;
+  }
+  div#home a.list-item:first-child {
+    margin-top: 0;
   }
 }
 
