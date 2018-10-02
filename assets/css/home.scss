@@ -37,7 +37,7 @@ div#home{
     /* List Item */
     a.list-item{
         background-color: #FFF;
-        // box-shadow: 0px 3px 10px 0 rgba(0,0,0,.04);
+        box-shadow: 0 1px 3px 0 rgba(0,0,0,.12);
         display: inline-block;
         cursor: pointer;
         position: relative;
@@ -82,7 +82,7 @@ div#home{
 
             /* Subtitle */
             div.subtitle{
-                color: darken(saturate($color-accent-2, 2%), 4%);
+                color: $color-accent-2;
                 @include font-regular;
                 font-size: 12px;
                 margin-top: 4px;
@@ -98,20 +98,43 @@ div#home{
                 margin-top: 18px;
             }
 
-            /* [Learn More] */
-            button.learn-more{
-                border: 1px solid $color-base-1;
-                border-radius: 2px;
-                color: $color-base-1;
-                @include font-bold;
-                font-size: 12px;
-                margin-top: 32px;
-                padding: 10px 14px;
+            /* Learn More */
+            div.learn-more{
+                margin-top: 18px;
+                margin-left: calc(100% - 115px);
+
+                span{
+                    color: $color-base-1;
+                    @include font-regular;
+                    font-size: 16px;
+                    line-height: 24px;
+                    vertical-align: middle;
+                }
+
+                div.arrow{
+                    background-image: url('../images/icon_arrow.png');
+                    background-size: 100%;
+                    display: inline-block;
+                    margin-left: 8px;
+                    vertical-align: middle;
+                    width: 17px; height: 12px;
+                }
             }
+
+            // /* [Learn More] */
+            // button.learn-more{
+            //     border: 1px solid $color-base-1;
+            //     border-radius: 2px;
+            //     color: $color-base-1;
+            //     @include font-bold;
+            //     font-size: 12px;
+            //     margin-top: 32px;
+            //     padding: 10px 14px;
+            // }
         }
 
         // Responsive
-        @media (max-width: 645px){
+        @media (max-width: 768px){
             a.list-item{
                 margin-left: 0 !important;
                 margin-top: 80px;

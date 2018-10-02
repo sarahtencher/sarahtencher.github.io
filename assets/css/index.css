@@ -63,6 +63,7 @@ div#home div.items {
 }
 div#home a.list-item {
   background-color: #FFF;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.12);
   display: inline-block;
   cursor: pointer;
   position: relative;
@@ -77,7 +78,7 @@ div#home a.list-item:nth-child(3), div#home a.list-item:nth-child(4), div#home a
   margin-top: 80px;
 }
 div#home div.image-container {
-  background-color: #9F9FED;
+  background-color: #565e66;
   box-sizing: border-box;
   font-size: 0;
   width: 100%;
@@ -95,7 +96,7 @@ div#home div.details {
   /* Title */
   /* Subtitle */
   /* Description */
-  /* [Learn More] */
+  /* Learn More */
 }
 div#home div.details div.title {
   color: #282829;
@@ -104,7 +105,7 @@ div#home div.details div.title {
   font-size: 21px;
 }
 div#home div.details div.subtitle {
-  color: #8c8ceb;
+  color: #565e66;
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 12px;
@@ -119,17 +120,28 @@ div#home div.details div.description {
   line-height: 24px;
   margin-top: 18px;
 }
-div#home div.details button.learn-more {
-  border: 1px solid #282829;
-  border-radius: 2px;
+div#home div.details div.learn-more {
+  margin-top: 18px;
+  margin-left: calc(100% - 115px);
+}
+div#home div.details div.learn-more span {
   color: #282829;
   font-family: "Roboto", sans-serif;
-  font-weight: 500;
-  font-size: 12px;
-  margin-top: 32px;
-  padding: 10px 14px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  vertical-align: middle;
 }
-@media (max-width: 645px) {
+div#home div.details div.learn-more div.arrow {
+  background-image: url("../images/icon_arrow.png");
+  background-size: 100%;
+  display: inline-block;
+  margin-left: 8px;
+  vertical-align: middle;
+  width: 17px;
+  height: 12px;
+}
+@media (max-width: 768px) {
   div#home a.list-item {
     margin-left: 0 !important;
     margin-top: 80px;
