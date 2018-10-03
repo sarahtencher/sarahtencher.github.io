@@ -56,6 +56,16 @@ div#home{
         &:hover{
             // transform: translateY(-10px);
         }
+
+        // Responsive
+        @media (max-width: 768px){
+
+            margin-left: 0 !important;
+            margin-top: 80px;
+            width: 100%;
+
+            &:first-child{  margin-top: 0  }
+        }
     }
 
         /* Image Container */
@@ -139,14 +149,5 @@ div#home{
             // }
         }
 
-        // Responsive
-        @media (max-width: 768px){
-            a.list-item{
-                margin-left: 0 !important;
-                margin-top: 80px;
-                width: 100%;
 
-                &:first-child{  margin-top: 0  }
-            }
-        }
 }

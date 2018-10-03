@@ -23,6 +23,16 @@ body {
   margin: 0;
   padding: 60px 15%;
 }
+@media (max-width: 768px) {
+  body {
+    padding: 60px 10%;
+  }
+}
+@media (max-width: 540px) {
+  body {
+    padding: 40px 5%;
+  }
+}
 
 div#home {
   width: 100%;
@@ -77,6 +87,16 @@ div#home a.list-item:nth-child(even) {
 }
 div#home a.list-item:nth-child(3), div#home a.list-item:nth-child(4), div#home a.list-item:nth-child(5) {
   margin-top: 80px;
+}
+@media only screen and (max-width: 768px) {
+  div#home a.list-item {
+    margin-left: 0 !important;
+    margin-top: 80px;
+    width: 100%;
+  }
+  div#home a.list-item:first-child {
+    margin-top: 0;
+  }
 }
 div#home div.image-container {
   background-color: #565e66;
@@ -141,16 +161,6 @@ div#home div.details div.learn-more div.arrow {
   vertical-align: middle;
   width: 17px;
   height: 12px;
-}
-@media (max-width: 768px) {
-  div#home a.list-item {
-    margin-left: 0 !important;
-    margin-top: 80px;
-    width: 100%;
-  }
-  div#home a.list-item:first-child {
-    margin-top: 0;
-  }
 }
 
 div.details {
