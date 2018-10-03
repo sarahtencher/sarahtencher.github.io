@@ -45,11 +45,17 @@ div#home{
         vertical-align: top;
         width: 48%;
 
+        transition: transform .2s ease;
+
         &:nth-child(even){  margin-left: 4%  }
 
         &:nth-child(3),
         &:nth-child(4),
         &:nth-child(5){  margin-top: 80px  }
+
+        &:hover{
+            // transform: translateY(-10px);
+        }
     }
 
         /* Image Container */
@@ -77,7 +83,7 @@ div#home{
             div.title{
                 color: $color-base-1;
                 @include font-bold;
-                font-size: 21px;
+                font-size: 18px;
             }
 
             /* Subtitle */

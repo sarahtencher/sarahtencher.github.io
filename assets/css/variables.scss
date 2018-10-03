@@ -4,7 +4,6 @@ $color-base-2: #F0F1F2;
 
 $color-accent-2: #565e66;
 $color-accent-1: #736CED;
-// $color-accent-2: #9F9FED;
 $color-accent-3: #D4C1EC;
 
 
@@ -17,3 +16,5 @@ $color-accent-3: #D4C1EC;
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
 }
+
+.no-top-margin{  margin-top: 0 !important  }
