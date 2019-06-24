@@ -1,3 +1,4 @@
+/* Variables */
 .no-top-margin {
   margin-top: 0 !important;
 }
@@ -21,19 +22,17 @@ div.v-centerizer {
 
 body {
   margin: 0;
-  padding: 60px 15%;
+  /* Content */
 }
-@media (max-width: 768px) {
-  body {
-    padding: 60px 10%;
-  }
+body div.content {
+  padding: 100px 15%;
+  /* {_home} */
 }
-@media (max-width: 540px) {
-  body {
-    padding: 40px 5%;
-  }
+body div.content._home {
+  background-color: #FAFAFA;
 }
 
+/* Identifier */
 div#home {
   width: 100%;
   /* Heading */
@@ -52,7 +51,7 @@ div#home div.heading {
   text-align: center;
 }
 div#home div.navigation {
-  margin: 20px 0 64px;
+  margin: 20px 0 120px;
   text-align: center;
 }
 div#home div.navigation a {
@@ -73,6 +72,7 @@ div#home div.items {
 }
 div#home a.list-item {
   background-color: #FFF;
+  border-radius: 3px;
   box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.12);
   display: inline-block;
   cursor: pointer;
@@ -81,6 +81,7 @@ div#home a.list-item {
   vertical-align: top;
   width: 48%;
   transition: transform 0.2s ease;
+  /* Shadow */
 }
 div#home a.list-item:nth-child(even) {
   margin-left: 4%;
@@ -88,32 +89,39 @@ div#home a.list-item:nth-child(even) {
 div#home a.list-item:nth-child(3), div#home a.list-item:nth-child(4), div#home a.list-item:nth-child(5) {
   margin-top: 80px;
 }
-@media only screen and (max-width: 768px) {
-  div#home a.list-item {
-    margin-left: 0 !important;
-    margin-top: 80px;
-    width: 100%;
-  }
-  div#home a.list-item:first-child {
-    margin-top: 0;
-  }
+div#home a.list-item div.shadow {
+  -webkit-box-shadow: 0 12px 40px 0 rgba(0, 0, 0, 0.26);
+  box-shadow: 0 12px 40px 0 rgba(0, 0, 0, 0.26);
+  position: absolute;
+  top: 4%;
+  left: 4%;
+  width: 92%;
+  height: 92%;
+  z-index: 1;
 }
 div#home div.image-container {
   background-color: #565e66;
+  border-radius: 3px 3px 0 0;
   box-sizing: border-box;
   font-size: 0;
+  position: relative;
   width: 100%;
+  z-index: 2;
 }
 div#home div.image-container img {
+  border-radius: inherit;
   display: block;
   height: auto;
   width: 100%;
 }
 div#home div.details {
-  background-color: #F0F1F2;
+  background-color: #FFF;
+  border-radius: 0 0 3px 3px;
   box-sizing: border-box;
-  padding: 24px 30px;
+  padding: 24px 28px;
+  position: relative;
   width: 100%;
+  z-index: 2;
   /* Title */
   /* Subtitle */
   /* Description */
@@ -123,26 +131,26 @@ div#home div.details div.title {
   color: #282829;
   font-family: "Roboto", sans-serif;
   font-weight: 500;
-  font-size: 18px;
+  font-size: 20px;
 }
 div#home div.details div.subtitle {
   color: #565e66;
   font-family: "Roboto", sans-serif;
   font-weight: 400;
-  font-size: 12px;
-  margin-top: 4px;
+  font-size: 14px;
+  margin-top: 6px;
   text-transform: uppercase;
 }
 div#home div.details div.description {
   color: #282829;
   font-family: "Roboto", sans-serif;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 24px;
   margin-top: 18px;
 }
 div#home div.details div.learn-more {
-  margin-top: 18px;
+  margin-top: 24px;
   margin-left: calc(100% - 115px);
 }
 div#home div.details div.learn-more span {
@@ -163,6 +171,14 @@ div#home div.details div.learn-more div.arrow {
   height: 12px;
 }
 
+/* Responsive */
+@media (max-width: 320px) {
+  div#home a.list-item {
+    width: 100%;
+  }
+}
+
+/* Identifier */
 div.details {
   /* Header */
   /* Section */
@@ -277,6 +293,7 @@ div.details div.section div.image._half:nth-child(even) {
   margin-left: 2%;
 }
 
+/* Identifier */
 div.about {
   /* Header */
   /* Profile Picture */
@@ -302,7 +319,7 @@ div.about div.header div.navigation {
   display: inline-block;
   padding-top: 8px;
   position: absolute;
-  right: 5%;
+  right: 15%;
   vertical-align: middle;
 }
 div.about div.header div.navigation a {
