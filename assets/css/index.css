@@ -137,12 +137,18 @@ div#home div.details div.learn-more div.arrow {
 }
 
 /* Responsive */
-@media (max-width: 320px) {
+@media (max-width: 520px) {
   div#home a.list-item {
     width: 100%;
   }
+  div#home a.list-item + a.list-item, div#home a.list-item:nth-child(3), div#home a.list-item:nth-child(4), div#home a.list-item:nth-child(5) {
+    margin-top: 48px;
+  }
+  div#home a.list-item:nth-child(even) {
+    margin-left: 0;
+    margin-top: 48px;
+  }
 }
-
 /* Identifier */
 div.details {
   /* Section */
@@ -305,7 +311,7 @@ div.header a.heading {
   color: #282829;
   display: inline-block;
   font-family: "Roboto", sans-serif;
-  font-weight: 500;
+  font-weight: 400;
   font-size: 28px;
   letter-spacing: 0.2px;
   text-align: left;

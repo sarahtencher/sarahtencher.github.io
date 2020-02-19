@@ -116,11 +116,36 @@ div#home{
 /* Responsive */
 div#home{
 
+    // 520px
+    @media (max-width: 520px) {
+
+        // Full width items.
+        a.list-item{  
+            width: 100%;
+
+            // Decrease top margin.
+            & + a.list-item,
+            &:nth-child(3), 
+            &:nth-child(4), 
+            &:nth-child(5){
+                margin-top: 48px;
+            }
+
+            // Remove left margin and decrease top margin.
+            &:nth-child(even){
+                margin-left: 0;
+                margin-top: 48px;
+            }
+        }
+        
+    }
+
+
     // 320px
     @media (max-width: 320px) {
 
-        // Full width items.
-        a.list-item{  width: 100%  }
+        // decrease text styles.
+
     }
 
 }
