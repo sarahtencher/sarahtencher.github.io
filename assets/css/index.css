@@ -25,55 +25,23 @@ body {
   /* Content */
 }
 body div.content {
-  padding: 100px 15%;
-  /* {_home} */
-}
-body div.content._home {
-  background-color: #FAFAFA;
+  margin: auto;
+  max-width: 1196px;
+  padding: 36px 2.5% 100px;
 }
 
 /* Identifier */
 div#home {
   width: 100%;
-  /* Heading */
-  /* Navigation */
   /* Items */
   /* List Item */
   /* Image Container */
   /* Details */
 }
-div#home div.heading {
-  color: #282829;
-  font-family: "Roboto", sans-serif;
-  font-weight: 500;
-  font-size: 32px;
-  letter-spacing: 0.2px;
-  text-align: center;
-}
-div#home div.navigation {
-  margin: 20px 0 120px;
-  text-align: center;
-}
-div#home div.navigation a {
-  color: #282829;
-  display: inline-block;
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
-  font-size: 14px;
-  text-decoration: none;
-  text-transform: uppercase;
-  vertical-align: middle;
-}
-div#home div.navigation a + a {
-  margin-left: 24px;
-}
 div#home div.items {
   font-size: 0;
 }
 div#home a.list-item {
-  background-color: #FFF;
-  border-radius: 3px;
-  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.12);
   display: inline-block;
   cursor: pointer;
   position: relative;
@@ -87,7 +55,7 @@ div#home a.list-item:nth-child(even) {
   margin-left: 4%;
 }
 div#home a.list-item:nth-child(3), div#home a.list-item:nth-child(4), div#home a.list-item:nth-child(5) {
-  margin-top: 80px;
+  margin-top: 100px;
 }
 div#home a.list-item div.shadow {
   -webkit-box-shadow: 0 12px 40px 0 rgba(0, 0, 0, 0.26);
@@ -101,7 +69,6 @@ div#home a.list-item div.shadow {
 }
 div#home div.image-container {
   background-color: #565e66;
-  border-radius: 3px 3px 0 0;
   box-sizing: border-box;
   font-size: 0;
   position: relative;
@@ -115,10 +82,7 @@ div#home div.image-container img {
   width: 100%;
 }
 div#home div.details {
-  background-color: #FFF;
-  border-radius: 0 0 3px 3px;
   box-sizing: border-box;
-  padding: 24px 28px;
   position: relative;
   width: 100%;
   z-index: 2;
@@ -130,24 +94,25 @@ div#home div.details {
 div#home div.details div.title {
   color: #282829;
   font-family: "Roboto", sans-serif;
-  font-weight: 500;
+  font-weight: 400;
   font-size: 20px;
+  margin-top: 8px;
 }
 div#home div.details div.subtitle {
   color: #565e66;
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 14px;
-  margin-top: 6px;
+  margin-top: 20px;
   text-transform: uppercase;
 }
 div#home div.details div.description {
   color: #282829;
   font-family: "Roboto", sans-serif;
   font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
-  margin-top: 18px;
+  font-size: 14px;
+  line-height: 22px;
+  margin-top: 10px;
 }
 div#home div.details div.learn-more {
   margin-top: 24px;
@@ -180,52 +145,24 @@ div#home div.details div.learn-more div.arrow {
 
 /* Identifier */
 div.details {
-  /* Header */
   /* Section */
-}
-div.details div.header {
-  margin-bottom: 48px;
-  /* Heading */
-  /* Navigation */
-}
-div.details div.header a.heading {
-  color: #282829;
-  display: inline-block;
-  font-family: "Roboto", sans-serif;
-  font-weight: 500;
-  font-size: 32px;
-  letter-spacing: 0.2px;
-  text-align: left;
-  text-decoration: none;
-  vertical-align: middle;
-}
-div.details div.header div.navigation {
-  display: inline-block;
-  padding-top: 8px;
-  position: absolute;
-  right: 15%;
-  vertical-align: middle;
-}
-div.details div.header div.navigation a {
-  color: #282829;
-  display: inline-block;
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
-  font-size: 14px;
-  text-decoration: none;
-  text-transform: uppercase;
-  vertical-align: middle;
-}
-div.details div.header div.navigation a + a {
-  margin-left: 24px;
 }
 div.details h1 {
   color: #282829;
   font-family: "Roboto", sans-serif;
   font-weight: 500;
-  font-size: 24px;
-  margin-bottom: 24px;
+  font-size: 32px;
+  margin-bottom: 20px;
   text-align: center;
+}
+div.details div.subheading {
+  color: #282829;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  opacity: 0.64;
+  text-align: center;
+  text-transform: uppercase;
 }
 div.details div.section {
   /* Video */
@@ -239,8 +176,8 @@ div.details div.section h2 {
   color: #282829;
   font-family: "Roboto", sans-serif;
   font-weight: 500;
-  font-size: 20px;
-  margin-bottom: 8px;
+  font-size: 24px;
+  margin-bottom: 14px;
 }
 div.details div.section p {
   color: #282829;
@@ -248,6 +185,9 @@ div.details div.section p {
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
+}
+div.details div.section p + video {
+  margin-top: 48px;
 }
 div.details div.section ul li {
   color: #282829;
@@ -257,14 +197,19 @@ div.details div.section ul li {
   line-height: 24px;
 }
 div.details div.section video {
+  margin: 64px auto;
   width: 100%;
+}
+div.details div.section video:last-child {
+  margin-bottom: 28px;
 }
 div.details div.section div.images {
   font-size: 0;
   text-align: center;
 }
 div.details div.section div.image {
-  margin: 40px 0;
+  margin: 64px auto;
+  max-width: 80%;
   /* Caption */
   /* {_half} */
 }
@@ -295,45 +240,8 @@ div.details div.section div.image._half:nth-child(even) {
 
 /* Identifier */
 div.about {
-  /* Header */
   /* Profile Picture */
   /* Details */
-}
-div.about div.header {
-  margin-bottom: 48px;
-  /* Heading */
-  /* Navigation */
-}
-div.about div.header a.heading {
-  color: #282829;
-  display: inline-block;
-  font-family: "Roboto", sans-serif;
-  font-weight: 500;
-  font-size: 32px;
-  letter-spacing: 0.2px;
-  text-align: left;
-  text-decoration: none;
-  vertical-align: middle;
-}
-div.about div.header div.navigation {
-  display: inline-block;
-  padding-top: 8px;
-  position: absolute;
-  right: 15%;
-  vertical-align: middle;
-}
-div.about div.header div.navigation a {
-  color: #282829;
-  display: inline-block;
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
-  font-size: 14px;
-  text-decoration: none;
-  text-transform: uppercase;
-  vertical-align: middle;
-}
-div.about div.header div.navigation a + a {
-  margin-left: 24px;
 }
 div.about div.profile-pic {
   display: inline-block;
@@ -377,6 +285,52 @@ div.about div.details div.contact, div.about div.details a.contact {
   line-height: 24px;
   margin-top: 4px;
   text-decoration: none;
+}
+
+/* Header */
+div.header {
+  background-color: #FFF;
+  margin: auto;
+  padding: 16px 0;
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 95%;
+  z-index: 3;
+  max-width: 1196px;
+  /* Heading */
+  /* Navigation */
+}
+div.header a.heading {
+  color: #282829;
+  display: inline-block;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 28px;
+  letter-spacing: 0.2px;
+  text-align: left;
+  text-decoration: none;
+  vertical-align: middle;
+}
+div.header div.navigation {
+  display: inline-block;
+  padding-top: 8px;
+  position: absolute;
+  right: 14px;
+  vertical-align: middle;
+}
+div.header div.navigation a {
+  color: #282829;
+  display: inline-block;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  text-decoration: none;
+  text-transform: uppercase;
+  vertical-align: middle;
+}
+div.header div.navigation a + a {
+  margin-left: 24px;
 }
 
 /*# sourceMappingURL=index.css.map */

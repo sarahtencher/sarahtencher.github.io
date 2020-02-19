@@ -3,33 +3,6 @@
 div#home{
     width: 100%;
 
-    /* Heading */
-    div.heading{
-        color: $color-base-1;
-        @include font-bold;
-        font-size: 32px;
-        letter-spacing: 0.2px;
-        text-align: center;
-    }
-
-    /* Navigation */
-    div.navigation{
-        margin: 20px 0 120px;
-        text-align: center;
-
-        a{
-            color: $color-base-1;
-            display: inline-block;
-            @include font-regular;
-            font-size: 14px;
-            text-decoration: none;
-            text-transform: uppercase;
-            vertical-align: middle;
-
-            & + a{  margin-left: 24px  }
-        }
-    }
-
     /* Items */
     div.items{
         font-size: 0;
@@ -37,9 +10,6 @@ div#home{
 
     /* List Item */
     a.list-item{
-        background-color: #FFF;
-        border-radius: 3px;
-        box-shadow: 0 1px 3px 0 rgba(0,0,0,.12);
         display: inline-block;
         cursor: pointer;
         position: relative;
@@ -53,11 +23,7 @@ div#home{
 
         &:nth-child(3),
         &:nth-child(4),
-        &:nth-child(5){  margin-top: 80px  }
-
-        &:hover{
-            // transform: translateY(-10px);
-        }
+        &:nth-child(5){  margin-top: 100px  }
 
         /* Shadow */
         div.shadow{
@@ -73,7 +39,6 @@ div#home{
         /* Image Container */
         div.image-container{
             background-color: $color-accent-2;
-            border-radius: 3px 3px 0 0;
             box-sizing: border-box;
             font-size: 0;
             position: relative;
@@ -89,10 +54,7 @@ div#home{
 
         /* Details */
         div.details{
-            background-color: #FFF;
-            border-radius: 0 0 3px 3px;
             box-sizing: border-box;
-            padding: 24px 28px;
             position: relative;
             width: 100%;
             z-index: 2;
@@ -100,8 +62,9 @@ div#home{
             /* Title */
             div.title{
                 color: $color-base-1;
-                @include font-bold;
+                @include font-regular;
                 font-size: 20px;
+                margin-top: 8px;
             }
 
             /* Subtitle */
@@ -109,7 +72,7 @@ div#home{
                 color: $color-accent-2;
                 @include font-regular;
                 font-size: 14px;
-                margin-top: 6px;
+                margin-top: 20px;
                 text-transform: uppercase;
             }
 
@@ -117,9 +80,9 @@ div#home{
             div.description{
                 color: $color-base-1;
                 @include font-regular;
-                font-size: 16px;
-                line-height: 24px;
-                margin-top: 18px;
+                font-size: 14px;
+                line-height: 22px;
+                margin-top: 10px;
             }
 
             /* Learn More */
@@ -144,17 +107,6 @@ div#home{
                     width: 17px; height: 12px;
                 }
             }
-
-            // /* [Learn More] */
-            // button.learn-more{
-            //     border: 1px solid $color-base-1;
-            //     border-radius: 2px;
-            //     color: $color-base-1;
-            //     @include font-bold;
-            //     font-size: 12px;
-            //     margin-top: 32px;
-            //     padding: 10px 14px;
-            // }
         }
 }
 

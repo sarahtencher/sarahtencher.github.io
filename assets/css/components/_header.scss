@@ -1,0 +1,44 @@
+/* Header */
+div.header{
+    background-color: #FFF;
+    margin: auto;
+    padding: 16px 0;
+    position: relative;
+    top: 0; left: 0;
+    width: 95%;
+    z-index: 3;
+    max-width: 1196px;
+
+    /* Heading */
+    a.heading{
+        color: $color-base-1;
+        display: inline-block;
+        @include font-bold;
+        font-size: 28px;
+        letter-spacing: 0.2px;
+        text-align: left;
+        text-decoration: none;
+        vertical-align: middle;
+    }
+
+    /* Navigation */
+    div.navigation{
+        display: inline-block;
+        padding-top: 8px;
+        position: absolute;
+        right: 14px;
+        vertical-align: middle;
+
+        a{
+            color: $color-base-1;
+            display: inline-block;
+            @include font-regular;
+            font-size: 14px;
+            text-decoration: none;
+            text-transform: uppercase;
+            vertical-align: middle;
+
+            & + a{  margin-left: 24px  }
+        }
+    }
+}

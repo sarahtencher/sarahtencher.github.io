@@ -19,12 +19,8 @@ body{
 
     /* Content */
     div.content{
-        padding: 100px 15%;
-
-
-        /* {_home} */
-        &._home{
-            background-color: #FAFAFA;
-        }
+        margin: auto;
+        max-width: 1196px;
+        padding: 36px 2.5% 100px;
     }
 }
