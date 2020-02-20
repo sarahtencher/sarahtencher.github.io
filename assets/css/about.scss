@@ -24,7 +24,7 @@ div.about{
 
         h1{
             color: $color-base-1;
-            @include font-semibold;
+            @include font-regular;
             font-size: 20px;
             margin-bottom: 8px;
             text-align: left;
@@ -47,4 +47,56 @@ div.about{
             text-decoration: none;
         }
     }
+}
+
+
+
+
+/* Responsive */
+div.about{
+
+    
+    // 580px
+    @media (max-width: 580px) {
+
+        // Center.
+        div.profile-pic{
+            display: block;
+            margin: 0 auto 36px;
+        }
+
+        // Center.
+        div.details{
+            display: block;
+            margin-left: 0;
+            width: 100%;
+
+            // Decrease font sizes and margins.
+            h1{
+                font-size: 18px;
+                margin-bottom: 8px;
+            }
+
+            p{
+                font-size: 14px;
+                margin-top: 0;
+            }
+
+            div.contact, a.contact{
+                font-size: 14px;
+                margin-top: 4px;
+            }
+        }
+        
+    }
+
+
+    // 320px
+    @media (max-width: 320px) {
+
+        
+
+    }
+
+
 }

@@ -109,7 +109,7 @@ div.details{
 /* Responsive */
 div.details{
 
-    
+
     // 540px
     @media (max-width: 540px) {
 
@@ -152,7 +152,6 @@ div.details{
             // Reduce font size and top margin.
             p{
                 font-size: 14px;
-                margin-top: 8px;
 
                 // Reduce margins.
                 & + video{

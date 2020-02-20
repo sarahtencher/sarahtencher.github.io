@@ -30,9 +30,12 @@ body div.content {
   padding: 36px 0 100px;
   width: 95%;
 }
+body p {
+  margin-top: 0;
+}
 
 /* Responsive */
-@media (max-width: 320px) {
+@media (max-width: 640px) {
   body div.content {
     width: 88%;
   }
@@ -145,7 +148,7 @@ div#home div.details div.learn-more div.arrow {
 }
 
 /* Responsive */
-@media (max-width: 520px) {
+@media (max-width: 580px) {
   div#home a.list-item {
     width: 100%;
   }
@@ -296,7 +299,6 @@ div.details div.section div.image._half:nth-child(even) {
   }
   div.details div.section p {
     font-size: 14px;
-    margin-top: 8px;
   }
   div.details div.section p + video {
     margin: 36px auto;
@@ -329,7 +331,7 @@ div.about div.details {
 div.about div.details h1 {
   color: #282829;
   font-family: "Open Sans", sans-serif;
-  font-weight: 600;
+  font-weight: 400;
   font-size: 20px;
   margin-bottom: 8px;
   text-align: left;
@@ -352,6 +354,30 @@ div.about div.details div.contact, div.about div.details a.contact {
   text-decoration: none;
 }
 
+/* Responsive */
+@media (max-width: 580px) {
+  div.about div.profile-pic {
+    display: block;
+    margin: 0 auto 36px;
+  }
+  div.about div.details {
+    display: block;
+    margin-left: 0;
+    width: 100%;
+  }
+  div.about div.details h1 {
+    font-size: 18px;
+    margin-bottom: 8px;
+  }
+  div.about div.details p {
+    font-size: 14px;
+    margin-top: 0;
+  }
+  div.about div.details div.contact, div.about div.details a.contact {
+    font-size: 14px;
+    margin-top: 4px;
+  }
+}
 /* Header */
 div.header {
   background-color: #FFF;
@@ -381,7 +407,7 @@ div.header div.navigation {
   display: inline-block;
   padding-top: 9px;
   position: absolute;
-  right: 14px;
+  right: 0;
   vertical-align: middle;
 }
 div.header div.navigation a {
