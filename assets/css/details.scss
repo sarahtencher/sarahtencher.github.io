@@ -4,15 +4,16 @@ div.details{
 
     h1{
         color: $color-base-1;
-        @include font-bold;
+        @include font-regular;
         font-size: 32px;
-        margin-bottom: 20px;
+        margin-bottom: 16px;
         text-align: center;
     }
 
+    /* Subheading */
     div.subheading{
         color: $color-base-1;
-        @include font-bold;
+        @include font-regular;
         font-size: 18px;
         opacity: .64;
         text-align: center;
@@ -26,7 +27,7 @@ div.details{
 
         h2{
             color: $color-base-1;
-            @include font-bold;
+            @include font-regular;
             font-size: 24px;
             margin-bottom: 14px;
         }
@@ -43,7 +44,6 @@ div.details{
         }
 
         ul{
-
             li{
                 color: $color-base-1;
                 @include font-regular;
@@ -101,4 +101,68 @@ div.details{
                 }
             }
     }
+}
+
+
+
+
+/* Responsive */
+div.details{
+
+    
+    // 540px
+    @media (max-width: 540px) {
+
+        // Reduce font size and bottom margin.
+        h1{
+            font-size: 22px;
+            margin-bottom: 10px;
+        }
+
+        // Reduce font-size.
+        div.subheading{
+            font-size: 14px;
+        }
+
+        div.section{
+
+            // Reduce space between sections.
+            & + div.section{  margin-top: 36px  }
+
+            // Reduce margins.
+            div.image{
+                margin: 36px auto;
+            }
+
+            // Reduce margins.
+            video{
+                margin: 36px auto;
+
+                &:last-child{
+                    margin-bottom: 8px;
+                }
+            }
+    
+            // Reduce font size and bottom margin.
+            h2{
+                font-size: 18px;
+                margin-bottom: 8px;
+            }
+
+            // Reduce font size and top margin.
+            p{
+                font-size: 14px;
+                margin-top: 8px;
+
+                // Reduce margins.
+                & + video{
+                    margin: 36px auto;
+                }
+            }
+    
+        }
+        
+    }
+
+    
 }

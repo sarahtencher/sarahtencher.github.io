@@ -27,7 +27,15 @@ body {
 body div.content {
   margin: auto;
   max-width: 1196px;
-  padding: 36px 2.5% 100px;
+  padding: 36px 0 100px;
+  width: 95%;
+}
+
+/* Responsive */
+@media (max-width: 320px) {
+  body div.content {
+    width: 88%;
+  }
 }
 
 /* Identifier */
@@ -93,14 +101,14 @@ div#home div.details {
 }
 div#home div.details div.title {
   color: #282829;
-  font-family: "Roboto", sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: 400;
   font-size: 20px;
   margin-top: 8px;
 }
 div#home div.details div.subtitle {
   color: #565e66;
-  font-family: "Roboto", sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: 400;
   font-size: 14px;
   margin-top: 20px;
@@ -108,7 +116,7 @@ div#home div.details div.subtitle {
 }
 div#home div.details div.description {
   color: #282829;
-  font-family: "Roboto", sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 22px;
@@ -120,7 +128,7 @@ div#home div.details div.learn-more {
 }
 div#home div.details div.learn-more span {
   color: #282829;
-  font-family: "Roboto", sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
@@ -149,22 +157,39 @@ div#home div.details div.learn-more div.arrow {
     margin-top: 48px;
   }
 }
+@media (max-width: 320px) {
+  div#home div.details div.title {
+    font-size: 16px;
+    margin-top: 8px;
+  }
+  div#home div.details div.subtitle {
+    font-size: 10px;
+    margin-top: 20px;
+  }
+  div#home div.details div.description {
+    font-size: 12px;
+    line-height: 20px;
+    margin-top: 6px;
+  }
+}
+
 /* Identifier */
 div.details {
+  /* Subheading */
   /* Section */
 }
 div.details h1 {
   color: #282829;
-  font-family: "Roboto", sans-serif;
-  font-weight: 500;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
   font-size: 32px;
-  margin-bottom: 20px;
+  margin-bottom: 16px;
   text-align: center;
 }
 div.details div.subheading {
   color: #282829;
-  font-family: "Roboto", sans-serif;
-  font-weight: 500;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
   font-size: 18px;
   opacity: 0.64;
   text-align: center;
@@ -180,14 +205,14 @@ div.details div.section + div.section {
 }
 div.details div.section h2 {
   color: #282829;
-  font-family: "Roboto", sans-serif;
-  font-weight: 500;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
   font-size: 24px;
   margin-bottom: 14px;
 }
 div.details div.section p {
   color: #282829;
-  font-family: "Roboto", sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
@@ -197,7 +222,7 @@ div.details div.section p + video {
 }
 div.details div.section ul li {
   color: #282829;
-  font-family: "Roboto", sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
@@ -227,7 +252,7 @@ div.details div.section div.image img + div.caption {
 }
 div.details div.section div.image div.caption {
   color: #282829;
-  font-family: "Roboto", sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: 400;
   font-size: 12px;
   text-align: center;
@@ -242,6 +267,40 @@ div.details div.section div.image._half {
 }
 div.details div.section div.image._half:nth-child(even) {
   margin-left: 2%;
+}
+
+/* Responsive */
+@media (max-width: 540px) {
+  div.details h1 {
+    font-size: 22px;
+    margin-bottom: 10px;
+  }
+  div.details div.subheading {
+    font-size: 14px;
+  }
+  div.details div.section + div.section {
+    margin-top: 36px;
+  }
+  div.details div.section div.image {
+    margin: 36px auto;
+  }
+  div.details div.section video {
+    margin: 36px auto;
+  }
+  div.details div.section video:last-child {
+    margin-bottom: 8px;
+  }
+  div.details div.section h2 {
+    font-size: 18px;
+    margin-bottom: 8px;
+  }
+  div.details div.section p {
+    font-size: 14px;
+    margin-top: 8px;
+  }
+  div.details div.section p + video {
+    margin: 36px auto;
+  }
 }
 
 /* Identifier */
@@ -269,15 +328,15 @@ div.about div.details {
 }
 div.about div.details h1 {
   color: #282829;
-  font-family: "Roboto", sans-serif;
-  font-weight: 500;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
   font-size: 20px;
   margin-bottom: 8px;
   text-align: left;
 }
 div.about div.details p {
   color: #282829;
-  font-family: "Roboto", sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
@@ -285,7 +344,7 @@ div.about div.details p {
 }
 div.about div.details div.contact, div.about div.details a.contact {
   color: #282829;
-  font-family: "Roboto", sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
@@ -310,7 +369,7 @@ div.header {
 div.header a.heading {
   color: #282829;
   display: inline-block;
-  font-family: "Roboto", sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: 400;
   font-size: 28px;
   letter-spacing: 0.2px;
@@ -320,7 +379,7 @@ div.header a.heading {
 }
 div.header div.navigation {
   display: inline-block;
-  padding-top: 8px;
+  padding-top: 9px;
   position: absolute;
   right: 14px;
   vertical-align: middle;
@@ -328,7 +387,7 @@ div.header div.navigation {
 div.header div.navigation a {
   color: #282829;
   display: inline-block;
-  font-family: "Roboto", sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: 400;
   font-size: 14px;
   text-decoration: none;
@@ -337,6 +396,34 @@ div.header div.navigation a {
 }
 div.header div.navigation a + a {
   margin-left: 24px;
+}
+
+/* Responsive */
+@media (max-width: 460px) {
+  div.header a.heading {
+    font-size: 20px;
+  }
+  div.header div.navigation {
+    padding-top: 4px;
+  }
+  div.header div.navigation a {
+    font-size: 12px;
+  }
+  div.header div.navigation a + a {
+    margin-left: 16px;
+  }
+}
+@media (max-width: 360px) {
+  div.header a.heading {
+    font-size: 19px;
+    letter-spacing: normal;
+  }
+  div.header div.navigation {
+    padding-top: 3px;
+  }
+  div.header div.navigation a + a {
+    margin-left: 8px;
+  }
 }
 
 /*# sourceMappingURL=index.css.map */

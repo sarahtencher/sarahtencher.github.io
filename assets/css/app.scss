@@ -21,6 +21,27 @@ body{
     div.content{
         margin: auto;
         max-width: 1196px;
-        padding: 36px 2.5% 100px;
+        padding: 36px 0 100px;
+        width: 95%;
     }
+}
+
+
+
+
+/* Responsive */
+body{
+
+
+    // 320px
+    @media (max-width: 320px) {
+
+        // Reduce content width.
+        div.content{
+            width: 88%;
+        }
+
+    }
+
+    
 }

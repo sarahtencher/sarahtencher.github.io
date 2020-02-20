@@ -144,8 +144,27 @@ div#home{
     // 320px
     @media (max-width: 320px) {
 
-        // decrease text styles.
+        // decrease font sizes and margins.
+        div.details{
+
+            div.title{
+                font-size: 16px;
+                margin-top: 8px;
+            }
+
+            div.subtitle{
+                font-size: 10px;
+                margin-top: 20px;
+            }
+
+            div.description{
+                font-size: 12px;
+                line-height: 20px;
+                margin-top: 6px;
+            }
+        }
 
     }
 
+    
 }

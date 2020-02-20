@@ -24,7 +24,7 @@ div.about{
 
         h1{
             color: $color-base-1;
-            @include font-bold;
+            @include font-semibold;
             font-size: 20px;
             margin-bottom: 8px;
             text-align: left;
