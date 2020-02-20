@@ -1,0 +1,96 @@
+/* Header */
+div.header{
+    background-color: #FFF;
+    margin: auto;
+    padding: 16px 0;
+    position: relative;
+    top: 0; left: 0;
+    width: 95%;
+    z-index: 3;
+    max-width: 1196px;
+
+    /* Heading */
+    a.heading{
+        color: $color-base-1;
+        display: inline-block;
+        @include font-regular;
+        font-size: 28px;
+        letter-spacing: 0.2px;
+        text-align: left;
+        text-decoration: none;
+        vertical-align: middle;
+    }
+
+    /* Navigation */
+    div.navigation{
+        display: inline-block;
+        padding-top: 9px;
+        position: absolute;
+        right: 0;
+        vertical-align: middle;
+
+        a{
+            color: $color-base-1;
+            display: inline-block;
+            @include font-regular;
+            font-size: 14px;
+            text-decoration: none;
+            text-transform: uppercase;
+            vertical-align: middle;
+
+            & + a{  margin-left: 24px  }
+        }
+    }
+}
+
+
+
+
+/* Responsive */
+div.header{
+
+
+    // 460px
+    @media (max-width: 460px) {
+
+        // Decrease font size.
+        a.heading{
+            font-size: 20px;
+        }
+
+        // Reduce padding.
+        div.navigation{
+            padding-top: 4px;
+    
+            // Decrease font size.
+            a{
+                font-size: 12px;
+    
+                // Reduce space between links.
+                & + a{  margin-left: 16px  }
+            }
+        }
+
+    }
+
+
+    // 360px
+    @media (max-width: 360px) {
+
+        // Decrease font size and letter spacing.
+        a.heading{
+            font-size: 19px;
+            letter-spacing: normal;
+        }
+
+        // Reduce space between links.
+        div.navigation{
+            padding-top: 3px;
+
+            a + a{  margin-left: 8px  }
+        }
+
+    }
+
+    
+}

@@ -2,62 +2,34 @@
 /* Identifier */
 div.details{
 
-    /* Header */
-    div.header{
-        margin-bottom: 48px;
-
-        /* Heading */
-        a.heading{
-            color: $color-base-1;
-            display: inline-block;
-            @include font-bold;
-            font-size: 32px;
-            letter-spacing: 0.2px;
-            text-align: left;
-            text-decoration: none;
-            vertical-align: middle;
-        }
-
-        /* Navigation */
-        div.navigation{
-            display: inline-block;
-            padding-top: 8px;
-            position: absolute;
-            right: 15%;
-            vertical-align: middle;
-
-            a{
-                color: $color-base-1;
-                display: inline-block;
-                @include font-regular;
-                font-size: 14px;
-                text-decoration: none;
-                text-transform: uppercase;
-                vertical-align: middle;
-
-                & + a{  margin-left: 24px  }
-            }
-        }
-    }
-
     h1{
         color: $color-base-1;
-        @include font-bold;
-        font-size: 24px;
-        margin-bottom: 24px;
+        @include font-regular;
+        font-size: 32px;
+        margin-bottom: 16px;
         text-align: center;
+    }
+
+    /* Subheading */
+    div.subheading{
+        color: $color-base-1;
+        @include font-regular;
+        font-size: 18px;
+        opacity: .64;
+        text-align: center;
+        text-transform: uppercase;
     }
 
     /* Section */
     div.section{
 
-        & + div.section{  margin-top: 36px  }
+        & + div.section{  margin-top: 48px  }
 
         h2{
             color: $color-base-1;
-            @include font-bold;
-            font-size: 20px;
-            margin-bottom: 8px;
+            @include font-regular;
+            font-size: 22px;
+            margin-bottom: 14px;
         }
 
         p{
@@ -65,10 +37,13 @@ div.details{
             @include font-regular;
             font-size: 16px;
             line-height: 24px;
+
+            & + video{
+                margin-top: 48px;
+            }
         }
 
         ul{
-
             li{
                 color: $color-base-1;
                 @include font-regular;
@@ -79,7 +54,12 @@ div.details{
 
         /* Video */
         video{
-            width: 100%
+            margin: 64px auto;
+            width: 100%;
+
+            &:last-child{
+                margin-bottom: 28px;
+            }
         }
 
         /* Images */
@@ -90,7 +70,8 @@ div.details{
 
             /* Image */
             div.image{
-                margin: 40px 0;
+                margin: 64px auto;
+                max-width: 80%;
 
                 img{
                     width: 100%;
@@ -108,6 +89,7 @@ div.details{
                     & + img{  margin-top: 14px  }
                 }
 
+
                 /* {_half} */
                 &._half{
                     display: inline-block;
@@ -118,6 +100,115 @@ div.details{
                         margin-left: 2%;
                     }
                 }
+
+                /* {_grid} */
+                &._grid{
+                    display: inline-block;
+                    vertical-align: top;
+                    width: 49%;
+
+                    &:nth-child(1){
+                        margin-bottom: 18px;
+                    }
+                    &:nth-child(2){
+                        margin-left: 2%;
+                        margin-bottom: 18px;
+                    }
+                    &:nth-child(3){
+                        margin-top: 0;
+                    }
+                    &:nth-child(4){
+                        margin-left: 2%;
+                        margin-top: 0;
+                    }
+                }
             }
     }
+}
+
+
+
+
+/* Responsive */
+div.details{
+
+
+    // 540px
+    @media (max-width: 540px) {
+
+        // Reduce font size and bottom margin.
+        h1{
+            font-size: 22px;
+            margin-bottom: 10px;
+        }
+
+        // Reduce font-size.
+        div.subheading{
+            font-size: 14px;
+        }
+
+        div.section{
+
+            // Reduce space between sections.
+            & + div.section{  margin-top: 36px  }
+
+            // Reduce margins.
+            div.image{
+                margin: 36px auto;
+
+                // Full width.
+                &._half{
+                    display: block;
+                    margin: 36px auto 18px;
+                    width: 100%;
+
+                    // Adjust margins.
+                    &:nth-child(even){
+                        margin: 18px auto 36px;
+                    }
+                }
+
+                // Full width.
+                &._grid{
+                    display: block;
+                    margin: 36px auto 18px;
+                    width: 100%;
+
+                    // Adjust margins.
+                    & + ._grid{
+                        margin: 18px auto 0;
+                    }
+                }
+            }
+
+            // Reduce margins.
+            video{
+                margin: 36px auto;
+
+                &:last-child{
+                    margin-bottom: 8px;
+                }
+            }
+    
+            // Reduce font size and bottom margin.
+            h2{
+                font-size: 18px;
+                margin-bottom: 8px;
+            }
+
+            // Reduce font size and top margin.
+            p{
+                font-size: 14px;
+
+                // Reduce margins.
+                & + video{
+                    margin: 36px auto;
+                }
+            }
+    
+        }
+        
+    }
+
+    
 }

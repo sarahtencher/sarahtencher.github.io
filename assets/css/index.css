@@ -25,55 +25,34 @@ body {
   /* Content */
 }
 body div.content {
-  padding: 100px 15%;
-  /* {_home} */
+  margin: auto;
+  max-width: 1196px;
+  padding: 36px 0 100px;
+  width: 95%;
 }
-body div.content._home {
-  background-color: #FAFAFA;
+body p {
+  margin-top: 0;
+}
+
+/* Responsive */
+@media (max-width: 640px) {
+  body div.content {
+    width: 88%;
+  }
 }
 
 /* Identifier */
 div#home {
   width: 100%;
-  /* Heading */
-  /* Navigation */
   /* Items */
   /* List Item */
   /* Image Container */
   /* Details */
 }
-div#home div.heading {
-  color: #282829;
-  font-family: "Roboto", sans-serif;
-  font-weight: 500;
-  font-size: 32px;
-  letter-spacing: 0.2px;
-  text-align: center;
-}
-div#home div.navigation {
-  margin: 20px 0 120px;
-  text-align: center;
-}
-div#home div.navigation a {
-  color: #282829;
-  display: inline-block;
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
-  font-size: 14px;
-  text-decoration: none;
-  text-transform: uppercase;
-  vertical-align: middle;
-}
-div#home div.navigation a + a {
-  margin-left: 24px;
-}
 div#home div.items {
   font-size: 0;
 }
 div#home a.list-item {
-  background-color: #FFF;
-  border-radius: 3px;
-  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.12);
   display: inline-block;
   cursor: pointer;
   position: relative;
@@ -87,7 +66,7 @@ div#home a.list-item:nth-child(even) {
   margin-left: 4%;
 }
 div#home a.list-item:nth-child(3), div#home a.list-item:nth-child(4), div#home a.list-item:nth-child(5) {
-  margin-top: 80px;
+  margin-top: 100px;
 }
 div#home a.list-item div.shadow {
   -webkit-box-shadow: 0 12px 40px 0 rgba(0, 0, 0, 0.26);
@@ -101,7 +80,6 @@ div#home a.list-item div.shadow {
 }
 div#home div.image-container {
   background-color: #565e66;
-  border-radius: 3px 3px 0 0;
   box-sizing: border-box;
   font-size: 0;
   position: relative;
@@ -115,10 +93,7 @@ div#home div.image-container img {
   width: 100%;
 }
 div#home div.details {
-  background-color: #FFF;
-  border-radius: 0 0 3px 3px;
   box-sizing: border-box;
-  padding: 24px 28px;
   position: relative;
   width: 100%;
   z-index: 2;
@@ -129,25 +104,26 @@ div#home div.details {
 }
 div#home div.details div.title {
   color: #282829;
-  font-family: "Roboto", sans-serif;
-  font-weight: 500;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
   font-size: 20px;
+  margin-top: 8px;
 }
 div#home div.details div.subtitle {
   color: #565e66;
-  font-family: "Roboto", sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: 400;
   font-size: 14px;
-  margin-top: 6px;
+  margin-top: 20px;
   text-transform: uppercase;
 }
 div#home div.details div.description {
   color: #282829;
-  font-family: "Roboto", sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
-  margin-top: 18px;
+  font-size: 14px;
+  line-height: 22px;
+  margin-top: 10px;
 }
 div#home div.details div.learn-more {
   margin-top: 24px;
@@ -155,7 +131,7 @@ div#home div.details div.learn-more {
 }
 div#home div.details div.learn-more span {
   color: #282829;
-  font-family: "Roboto", sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
@@ -172,60 +148,55 @@ div#home div.details div.learn-more div.arrow {
 }
 
 /* Responsive */
-@media (max-width: 320px) {
+@media (max-width: 580px) {
   div#home a.list-item {
     width: 100%;
+  }
+  div#home a.list-item + a.list-item, div#home a.list-item:nth-child(3), div#home a.list-item:nth-child(4), div#home a.list-item:nth-child(5) {
+    margin-top: 48px;
+  }
+  div#home a.list-item:nth-child(even) {
+    margin-left: 0;
+    margin-top: 48px;
+  }
+}
+@media (max-width: 320px) {
+  div#home div.details div.title {
+    font-size: 16px;
+    margin-top: 8px;
+  }
+  div#home div.details div.subtitle {
+    font-size: 10px;
+    margin-top: 20px;
+  }
+  div#home div.details div.description {
+    font-size: 12px;
+    line-height: 20px;
+    margin-top: 6px;
   }
 }
 
 /* Identifier */
 div.details {
-  /* Header */
+  /* Subheading */
   /* Section */
-}
-div.details div.header {
-  margin-bottom: 48px;
-  /* Heading */
-  /* Navigation */
-}
-div.details div.header a.heading {
-  color: #282829;
-  display: inline-block;
-  font-family: "Roboto", sans-serif;
-  font-weight: 500;
-  font-size: 32px;
-  letter-spacing: 0.2px;
-  text-align: left;
-  text-decoration: none;
-  vertical-align: middle;
-}
-div.details div.header div.navigation {
-  display: inline-block;
-  padding-top: 8px;
-  position: absolute;
-  right: 15%;
-  vertical-align: middle;
-}
-div.details div.header div.navigation a {
-  color: #282829;
-  display: inline-block;
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
-  font-size: 14px;
-  text-decoration: none;
-  text-transform: uppercase;
-  vertical-align: middle;
-}
-div.details div.header div.navigation a + a {
-  margin-left: 24px;
 }
 div.details h1 {
   color: #282829;
-  font-family: "Roboto", sans-serif;
-  font-weight: 500;
-  font-size: 24px;
-  margin-bottom: 24px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 32px;
+  margin-bottom: 16px;
   text-align: center;
+}
+div.details div.subheading {
+  color: #282829;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  opacity: 0.64;
+  text-align: center;
+  text-transform: uppercase;
 }
 div.details div.section {
   /* Video */
@@ -233,40 +204,49 @@ div.details div.section {
   /* Image */
 }
 div.details div.section + div.section {
-  margin-top: 36px;
+  margin-top: 48px;
 }
 div.details div.section h2 {
   color: #282829;
-  font-family: "Roboto", sans-serif;
-  font-weight: 500;
-  font-size: 20px;
-  margin-bottom: 8px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 22px;
+  margin-bottom: 14px;
 }
 div.details div.section p {
   color: #282829;
-  font-family: "Roboto", sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
 }
+div.details div.section p + video {
+  margin-top: 48px;
+}
 div.details div.section ul li {
   color: #282829;
-  font-family: "Roboto", sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
 }
 div.details div.section video {
+  margin: 64px auto;
   width: 100%;
+}
+div.details div.section video:last-child {
+  margin-bottom: 28px;
 }
 div.details div.section div.images {
   font-size: 0;
   text-align: center;
 }
 div.details div.section div.image {
-  margin: 40px 0;
+  margin: 64px auto;
+  max-width: 80%;
   /* Caption */
   /* {_half} */
+  /* {_grid} */
 }
 div.details div.section div.image img {
   width: 100%;
@@ -276,7 +256,7 @@ div.details div.section div.image img + div.caption {
 }
 div.details div.section div.image div.caption {
   color: #282829;
-  font-family: "Roboto", sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: 400;
   font-size: 12px;
   text-align: center;
@@ -292,48 +272,79 @@ div.details div.section div.image._half {
 div.details div.section div.image._half:nth-child(even) {
   margin-left: 2%;
 }
+div.details div.section div.image._grid {
+  display: inline-block;
+  vertical-align: top;
+  width: 49%;
+}
+div.details div.section div.image._grid:nth-child(1) {
+  margin-bottom: 18px;
+}
+div.details div.section div.image._grid:nth-child(2) {
+  margin-left: 2%;
+  margin-bottom: 18px;
+}
+div.details div.section div.image._grid:nth-child(3) {
+  margin-top: 0;
+}
+div.details div.section div.image._grid:nth-child(4) {
+  margin-left: 2%;
+  margin-top: 0;
+}
+
+/* Responsive */
+@media (max-width: 540px) {
+  div.details h1 {
+    font-size: 22px;
+    margin-bottom: 10px;
+  }
+  div.details div.subheading {
+    font-size: 14px;
+  }
+  div.details div.section + div.section {
+    margin-top: 36px;
+  }
+  div.details div.section div.image {
+    margin: 36px auto;
+  }
+  div.details div.section div.image._half {
+    display: block;
+    margin: 36px auto 18px;
+    width: 100%;
+  }
+  div.details div.section div.image._half:nth-child(even) {
+    margin: 18px auto 36px;
+  }
+  div.details div.section div.image._grid {
+    display: block;
+    margin: 36px auto 18px;
+    width: 100%;
+  }
+  div.details div.section div.image._grid + ._grid {
+    margin: 18px auto 0;
+  }
+  div.details div.section video {
+    margin: 36px auto;
+  }
+  div.details div.section video:last-child {
+    margin-bottom: 8px;
+  }
+  div.details div.section h2 {
+    font-size: 18px;
+    margin-bottom: 8px;
+  }
+  div.details div.section p {
+    font-size: 14px;
+  }
+  div.details div.section p + video {
+    margin: 36px auto;
+  }
+}
 
 /* Identifier */
 div.about {
-  /* Header */
   /* Profile Picture */
   /* Details */
-}
-div.about div.header {
-  margin-bottom: 48px;
-  /* Heading */
-  /* Navigation */
-}
-div.about div.header a.heading {
-  color: #282829;
-  display: inline-block;
-  font-family: "Roboto", sans-serif;
-  font-weight: 500;
-  font-size: 32px;
-  letter-spacing: 0.2px;
-  text-align: left;
-  text-decoration: none;
-  vertical-align: middle;
-}
-div.about div.header div.navigation {
-  display: inline-block;
-  padding-top: 8px;
-  position: absolute;
-  right: 15%;
-  vertical-align: middle;
-}
-div.about div.header div.navigation a {
-  color: #282829;
-  display: inline-block;
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
-  font-size: 14px;
-  text-decoration: none;
-  text-transform: uppercase;
-  vertical-align: middle;
-}
-div.about div.header div.navigation a + a {
-  margin-left: 24px;
 }
 div.about div.profile-pic {
   display: inline-block;
@@ -355,15 +366,15 @@ div.about div.details {
 }
 div.about div.details h1 {
   color: #282829;
-  font-family: "Roboto", sans-serif;
-  font-weight: 500;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
   font-size: 20px;
   margin-bottom: 8px;
   text-align: left;
 }
 div.about div.details p {
   color: #282829;
-  font-family: "Roboto", sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
@@ -371,12 +382,110 @@ div.about div.details p {
 }
 div.about div.details div.contact, div.about div.details a.contact {
   color: #282829;
-  font-family: "Roboto", sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
   margin-top: 4px;
   text-decoration: none;
+}
+
+/* Responsive */
+@media (max-width: 580px) {
+  div.about div.profile-pic {
+    display: block;
+    margin: 0 auto 36px;
+  }
+  div.about div.details {
+    display: block;
+    margin-left: 0;
+    width: 100%;
+  }
+  div.about div.details h1 {
+    font-size: 18px;
+    margin-bottom: 8px;
+  }
+  div.about div.details p {
+    font-size: 14px;
+    margin-top: 0;
+  }
+  div.about div.details div.contact, div.about div.details a.contact {
+    font-size: 14px;
+    margin-top: 4px;
+  }
+}
+/* Header */
+div.header {
+  background-color: #FFF;
+  margin: auto;
+  padding: 16px 0;
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 95%;
+  z-index: 3;
+  max-width: 1196px;
+  /* Heading */
+  /* Navigation */
+}
+div.header a.heading {
+  color: #282829;
+  display: inline-block;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 28px;
+  letter-spacing: 0.2px;
+  text-align: left;
+  text-decoration: none;
+  vertical-align: middle;
+}
+div.header div.navigation {
+  display: inline-block;
+  padding-top: 9px;
+  position: absolute;
+  right: 0;
+  vertical-align: middle;
+}
+div.header div.navigation a {
+  color: #282829;
+  display: inline-block;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  text-decoration: none;
+  text-transform: uppercase;
+  vertical-align: middle;
+}
+div.header div.navigation a + a {
+  margin-left: 24px;
+}
+
+/* Responsive */
+@media (max-width: 460px) {
+  div.header a.heading {
+    font-size: 20px;
+  }
+  div.header div.navigation {
+    padding-top: 4px;
+  }
+  div.header div.navigation a {
+    font-size: 12px;
+  }
+  div.header div.navigation a + a {
+    margin-left: 16px;
+  }
+}
+@media (max-width: 360px) {
+  div.header a.heading {
+    font-size: 19px;
+    letter-spacing: normal;
+  }
+  div.header div.navigation {
+    padding-top: 3px;
+  }
+  div.header div.navigation a + a {
+    margin-left: 8px;
+  }
 }
 
 /*# sourceMappingURL=index.css.map */

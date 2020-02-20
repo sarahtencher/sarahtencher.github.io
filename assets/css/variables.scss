@@ -9,13 +9,13 @@ $color-accent-3: #D4C1EC;
 
 
 @mixin font-regular {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 400;
 }
 
-@mixin font-bold {
-  font-family: 'Roboto', sans-serif;
-  font-weight: 500;
+@mixin font-semibold {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
 }
 
 .no-top-margin{  margin-top: 0 !important  }
