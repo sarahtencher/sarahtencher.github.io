@@ -204,13 +204,13 @@ div.details div.section {
   /* Image */
 }
 div.details div.section + div.section {
-  margin-top: 36px;
+  margin-top: 48px;
 }
 div.details div.section h2 {
   color: #282829;
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
-  font-size: 24px;
+  font-size: 22px;
   margin-bottom: 14px;
 }
 div.details div.section p {
@@ -246,6 +246,7 @@ div.details div.section div.image {
   max-width: 80%;
   /* Caption */
   /* {_half} */
+  /* {_grid} */
 }
 div.details div.section div.image img {
   width: 100%;
@@ -271,6 +272,25 @@ div.details div.section div.image._half {
 div.details div.section div.image._half:nth-child(even) {
   margin-left: 2%;
 }
+div.details div.section div.image._grid {
+  display: inline-block;
+  vertical-align: top;
+  width: 49%;
+}
+div.details div.section div.image._grid:nth-child(1) {
+  margin-bottom: 18px;
+}
+div.details div.section div.image._grid:nth-child(2) {
+  margin-left: 2%;
+  margin-bottom: 18px;
+}
+div.details div.section div.image._grid:nth-child(3) {
+  margin-top: 0;
+}
+div.details div.section div.image._grid:nth-child(4) {
+  margin-left: 2%;
+  margin-top: 0;
+}
 
 /* Responsive */
 @media (max-width: 540px) {
@@ -286,6 +306,22 @@ div.details div.section div.image._half:nth-child(even) {
   }
   div.details div.section div.image {
     margin: 36px auto;
+  }
+  div.details div.section div.image._half {
+    display: block;
+    margin: 36px auto 18px;
+    width: 100%;
+  }
+  div.details div.section div.image._half:nth-child(even) {
+    margin: 18px auto 36px;
+  }
+  div.details div.section div.image._grid {
+    display: block;
+    margin: 36px auto 18px;
+    width: 100%;
+  }
+  div.details div.section div.image._grid + ._grid {
+    margin: 18px auto 0;
   }
   div.details div.section video {
     margin: 36px auto;

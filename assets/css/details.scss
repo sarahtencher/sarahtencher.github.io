@@ -23,12 +23,12 @@ div.details{
     /* Section */
     div.section{
 
-        & + div.section{  margin-top: 36px  }
+        & + div.section{  margin-top: 48px  }
 
         h2{
             color: $color-base-1;
             @include font-regular;
-            font-size: 24px;
+            font-size: 22px;
             margin-bottom: 14px;
         }
 
@@ -89,6 +89,7 @@ div.details{
                     & + img{  margin-top: 14px  }
                 }
 
+
                 /* {_half} */
                 &._half{
                     display: inline-block;
@@ -97,6 +98,28 @@ div.details{
 
                     &:nth-child(even){
                         margin-left: 2%;
+                    }
+                }
+
+                /* {_grid} */
+                &._grid{
+                    display: inline-block;
+                    vertical-align: top;
+                    width: 49%;
+
+                    &:nth-child(1){
+                        margin-bottom: 18px;
+                    }
+                    &:nth-child(2){
+                        margin-left: 2%;
+                        margin-bottom: 18px;
+                    }
+                    &:nth-child(3){
+                        margin-top: 0;
+                    }
+                    &:nth-child(4){
+                        margin-left: 2%;
+                        margin-top: 0;
                     }
                 }
             }
@@ -132,6 +155,30 @@ div.details{
             // Reduce margins.
             div.image{
                 margin: 36px auto;
+
+                // Full width.
+                &._half{
+                    display: block;
+                    margin: 36px auto 18px;
+                    width: 100%;
+
+                    // Adjust margins.
+                    &:nth-child(even){
+                        margin: 18px auto 36px;
+                    }
+                }
+
+                // Full width.
+                &._grid{
+                    display: block;
+                    margin: 36px auto 18px;
+                    width: 100%;
+
+                    // Adjust margins.
+                    & + ._grid{
+                        margin: 18px auto 0;
+                    }
+                }
             }
 
             // Reduce margins.
