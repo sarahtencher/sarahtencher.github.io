@@ -339,6 +339,12 @@ div.details div.section div.image._grid:nth-child(4) {
   div.details div.section p + video {
     margin: 36px auto;
   }
+  div.details div.section ul li {
+    font-size: 14px;
+  }
+  div.details div.section ul li + li {
+    margin-top: 8px;
+  }
 }
 
 /* Identifier */

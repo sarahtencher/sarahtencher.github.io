@@ -1,34 +1,56 @@
-
 <html>
-    <head>
-        <title>Sarah Tencher</title>
-        <link rel="stylesheet" href="../assets/css/index.css">
-        <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600&display=swap" rel="stylesheet">
-    </head>
-    <body>
-        <div class="content">
+
+<head>
+    <title>Sarah Tencher</title>
+    <link rel="stylesheet" href="../assets/css/index.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600&display=swap" rel="stylesheet">
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+</head>
+
+<body>
+
+    <!-- Header -->
+    <div class="header">
+
+        <!-- Heading -->
+        <a href="../index.html" class="heading">Sarah Tencher</a>
+
+        <!-- Navigation -->
+        <div class="navigation">
+            <a href="../index.html">Work</a>
+            <a href="about.html">About</a>
+            <a href="../assets/Resume-Sarah-Tencher.pdf">Resume</a>
+        </div>
+    </div>
+
+
+    <div class="content">
 
         <!-- Details -->
         <div class="details">
 
-
-            <!-- Header -->
-            <div class="header">
-
-                <!-- Heading -->
-                <a href="../index.html" class="heading">Sarah Tencher</a>
-
-                <!-- Navigation -->
-                <div class="navigation">
-                    <a href="../index.html">Work</a>
-                    <a href="pages/about.html">About</a>
-                    <a href="../assets/Resume-Sarah-Tencher.pdf">Resume</a>
-                </div>
-            </div>
-
-
             <!-- Page Heading -->
             <h1>Understand.com</h1>
+            <div class="subheading">UX/UI Design / Front-End Development</div>
+
+
+            <!-- Section // About -->
+            <div class="section">
+
+                <div class="images">
+                    <div class="image">
+                        <img src="../assets/images/understand-site/laptop_product.png" />
+                    </div>
+                </div>
+
+                <h2>About the Project</h2>
+                <p>
+                    In the past, Understand has licensed medical animation libraries and interactive
+                    deep dives to medical professionals around the world. When Understand decided
+                    to add single animations and images to the product offering as well, they needed a
+                    new site and webstore.
+                </p>
+            </div>
 
 
             <!-- Section // Goals -->
@@ -36,29 +58,127 @@
 
                 <h2>Goals</h2>
                 <p>
-                    optimize for sales by getting visitors to specialty/product of interest quickly
-                    impress visitors with visuals and overall UX
+                    As an animation and illustration company, Understand has a lot of visual content to
+                    proudly showcase therefore the goals of the redesign were:
+
+                    <ul>
+                        <li>Minimalistic, simple design with neutral colors and space between elements</li>
+                        <li>Show breadth of products in a way that is not overwhelming and is easy to consume</li>
+                        <li>Get users to product of interest quickly</li>
+                        <li>Increased ease of use and better overall user experience</li>
+                        <li>Smooth checkout so as not to hinder sales</li>
+                    </ul>
                 </p>
             </div>
+
 
             <!-- Section // Design -->
             <div class="section">
 
                 <h2>Design</h2>
                 <p>
-                    clean, minimal, bright, light use of color
-                    let imagery be the focus (since its an animation company)
-                    large fonts (assume older audience)
-                    lots of spacing
-
-                    Landing with focal search
-                    Specialty Pages (single, double)
+                    I wanted the process of finding an asset and purchasing it to be as seamless as
+                    possible. To facilitate this, there is a large focal search bar on the home page
+                    for users who know exactly what they are looking for. This prominent search
+                    is the most efficient and effective way to allow users easy access to the broad product
+                    catalog. Below are sections that encourage exploration for users who find themselves on the site
+                    without an exact goal in mind.
                 </p>
+
+                <!-- [Home Page] -->
+                <div class="images">
+                    <div class="image" style="max-width: 50%;">
+                        <img src="../assets/images/understand-site/ipad_home.png" />
+                    </div>
+                </div>
+
+                <p>
+                    The checkout process is an incredibly important part of the users experience and it was imperative
+                    to me that the checkout experience is as painless as possible. A status indicator is placed at the
+                    top of each step so users know exactly where they are, what they have done, and what they have left
+                    to do. The order details are also displayed at every step so that users are not forced to leave the
+                    checkout to double check their carts and can proceed without questions. Finally, a review tab is
+                    included in the process so users can ensure all of their personal details and items to be purchased
+                    are correct before submitting their payment details.
+                </p>
+
+                <p>
+                    This site is not only a store, but also describes who Understand is as a company. Making sure
+                    these supplemental pages matched the style of the store was important to maintain users' trust.
+                    Users can learn about Understand and what makes them a credible place to satisfy any
+                    medical animation and imagery needs.
+                </p>
+
+                <!-- [about us] -->
+                <!-- <div class="images">
+                    <div class="image" style="width: 60%">
+                        <img src="../assets/images/understand-site/ipads.png" />
+                    </div>
+                </div> -->
+
+                <p>
+                    My personal favorite part of the site is the product dropdown menu. It serves to categorize
+                    the most important products and provide access to all products offered in the store. When Understand
+                    partnered with Blausen, this menu had to be redesigned to accomodate all of Understand's
+                    new product offerings. I found it so difficult to design away from something I loved so
+                    much, and in the end I loved the new version just as much (if not more) than the previous
+                    version.
+                </p>
+
+                <!-- [both old and new product dropdowns] -->
+                <div class="images">
+                    <div class="image" style="max-width: 95%;">
+                        <img src="../assets/images/understand-site/laptops_dropdowns.png" />
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Section // Dev -->
+            <div class="section">
+
+                <h2>Development</h2>
+                <p>
+                    When users reach the site what they see is a highly customized shopify theme as well as custom
+                    react apps for search and checkout. I wrote most of the html, css, javascript, and react code and I
+                    could not be prouder or more thrilled.
+                </p>
+            </div>
+
+
+            <!-- Section // Post -->
+            <div class="section">
+
+                <h2>Post Launch Testing and Pain Points</h2>
+                <p>
+                    After studying user interactions and running usability tests, it was clear that users are not
+                    scrolling enough. On product pages specifically, users are scrolling less than 40% of the time. User
+                    testing concluded that users do not realize that there is more on the page than just the top section
+                    introducing the product. Data also showed that people were not interacting with the product demo
+                    nearly as much as expected. I took this information and decided to run some A/B tests focusing on
+                    how to encourage scrolling and increase interaction with the animation player.
+                </p>
+
+                <p>
+                    30% of users shown version A scrolled and 30% clicked into the product demo while 100% of users
+                    shown version B scrolled and 66% clicked into the product demo. Overall, version B was
+                    most sucessful in achieving our outlined goals. My next steps will be to run a similar test with a
+                    more respresentative group of users, including doctors, medical staff, and medical students, to
+                    gather more conclusive evidence.
+                </p>
+
+                <!-- [original, a, b] -->
+                <div class="images">
+                    <div class="image">
+                        <img src="../assets/images/understand-site/ipads_user-testing.png" />
+                    </div>
+                </div>
             </div>
 
         </div>
         <!-- /Details-->
 
     </div>
-  </body>
+</body>
+
 </html>
