@@ -33,6 +33,13 @@ body div.content {
 body p {
   margin-top: 0;
 }
+body a {
+  color: #365474;
+  text-decoration: none;
+}
+body a:hover {
+  color: #436181;
+}
 
 /* Responsive */
 @media (max-width: 640px) {
