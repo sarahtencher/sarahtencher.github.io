@@ -1,105 +1,101 @@
-
 <html>
-    <head>
-        <title>Sarah Tencher</title>
-        <link rel="stylesheet" href="../assets/css/index.css">
-        <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600&display=swap" rel="stylesheet">
-        <meta content="width=device-width, initial-scale=1" name="viewport" />
-    </head>
-    <body>
+
+<head>
+    <title>Sarah Tencher</title>
+    <link rel="stylesheet" href="../assets/css/index.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600&display=swap" rel="stylesheet">
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+</head>
+
+<body>
 
 
-         <!-- Header -->
-         <div class="header">
+    <!-- Header -->
+    <div class="header">
 
-            <!-- Heading -->
-            <a href="../index.html" class="heading">Sarah Tencher</a>
+        <!-- Heading -->
+        <a href="../index.html" class="heading">Sarah Tencher</a>
 
-            <!-- Navigation -->
-            <div class="navigation">
-                <a href="../index.html">Work</a>
-                <a href="about.html">About</a>
-                <a href="../assets/Resume-Sarah-Tencher.pdf">Resume</a>
-            </div>
+        <!-- Navigation -->
+        <div class="navigation">
+            <a href="../index.html">Work</a>
+            <a href="about.html">About</a>
+            <a href="../assets/Resume-Sarah-Tencher_2021.pdf">Resume</a>
         </div>
+    </div>
 
 
-        <div class="content">
+    <div class="content">
 
         <!-- Details -->
         <div class="details">
 
             <!-- Page Heading -->
             <h1>Rehearsal Application</h1>
-            <div class="subheading">UX/UI Design / Prototyping</div>
+            <div class="subheading">UX/UI Design / Prototyping / Usability Testing</div>
 
 
             <!-- Section // About the Project -->
             <div class="section">
 
                 <div class="image">
-                    <img src="../assets/images/rehearsal-app/rehearsal_app_placed.png"/>
+                    <img src="../assets/images/rehearsal-app/review-tabs.png" />
                 </div>
 
 
                 <h2>About the Project</h2>
                 <p>
-                    My biggest contribution to the rehearsal application is my redesign of the administrative conversation thread.
-                    This view is arguably the most important view of the administrative product and I was beyond excited to be
-                    given such an important task.
-                    Rehearsal is a tool facilitating asynchronous conversations between mentors and learners. The admin conversation thread
-                    is the where mentors go to view learner responses and leave feedback and grades. The nature
-                    of this task makes it very tedious, as each mentor has multiple learners responding to each scenario
-                    in a very similar way. One main goal was to make this task as painless as possible. By implementing shortcuts such as easy
-                    and intuitive navigation between learner responses, I aimed to reduce the friction involved in watching and
-                    responding to multiple responses.
+                    Rehearsal is a software platform that helps companies improve the communication skills of their
+                    employees through virtual practice. Learners are assigned video-based prompts, and their recorded
+                    video responses are reviewed by mentors or with artificial intelligence.
+                </p>
+                <p>
+                    As a product designer, it is my responsibility to design new features, improve existing features,
+                    and ensure any addition integrates seamlessly into the application. My role in each project varies;
+                    I am sometimes a designer, user researcher, usability tester, prototyper, or front-end developer. I
+                    love wearing many hats and approaching the product from many directions.
+                </p>
+                <p>
+                    The contribution to the Rehearsal platform I am most excited about is my redesign of the Admin
+                    Review Tab and Conversation Thread. The admin review tab is where rehearsal mentors spend most of
+                    their time. This tab is where mentors view learner responses and leave feedback and grades for their
+                    learners, making this tab arguably the most important piece of the administrative product. Mentoring
+                    is a tedious task since each mentor has multiple learners responding to each scenario in a very
+                    similar way. The main goal of this redesign was to reduce as much friction as possible for mentors
+                    watching and responding to many learner responses.
                 </p>
 
             </div>
 
-            <!-- Section // Design -->
+            <!-- Section // Design - Organization and Context -->
             <div class="section">
 
                 <h2>Design</h2>
                 <p>
-                    One main improvement to the admin thread is the sticky top bar. Since these conversation threads are long and
-                    relatively similar to each other, it is important that the mentor is aware of who is responding to what scenario.
-                    By displaying this data concisely and keeping it in the users view at all times instead of at the top of the page
-                    as it is currently, we are ensuring the mentor never looses track of the current conversation and is able to
-                    maintain an uninterrupted  workflow. Additionally this top bar displays the conversations status and a recommended
-                    action to help the mentor progress the conversation in a meaningful way.
+                    Currently, the review tab simply lists learner responses from newest to oldest with little to no
+                    organization. Additionally, when filters are applied to make the task more manageable, they
+                    disappear once the mentor enters a conversation and returns to the review tab.
                 </p>
                 <p>
-                    One issue with the current conversation thread is that users will type their feedback but forget to publish it.
-                    By using a bright bold color for the publish button and an additional warning message, users should be more aware
-                    of their current publication status and the steps to take to publish their responses.
+                    The new design initially groups responses by assignment with an overall summary statement, giving
+                    the mentor important context and an idea of how much work they have left to do. After selecting an
+                    assignment, responses are displayed in three tabs - needs review, prompted, and reviewed, again
+                    making it clear what the mentor should do next.
                 </p>
                 <p>
-                    Mentors have two options when leaving any kind of feedback to a response: typing a response or recording a response.
-                    In the previous conversation thread, both types of response options were displayed inline, giving them equal value. Since
-                    the entire app encourages video responses, we want mentors to respond with videos as well. To encourage this, the recording
-                    option is displayed above the typing option in the new design.
+                    After selecting a response, the mentor is taken to a redesigned admin conversation thread. The new
+                    conversation thread is designed as a supermodal to ensure any sorting or filtering on the review tab
+                    persists. The learners' responses are the main focus of the conversation thread, while the scenario
+                    video the learners are responding to is hidden in a separate tab. Since the mentor is likely
+                    reviewing multiple responses to the same scenario, there is no need for the scenario video to be at
+                    the top of each thread as it is today.
                 </p>
 
                 <div class="images">
                     <div class="image">
-                        <img src="../assets/images/rehearsal-app/rehearsal_app-thread.jpg"/>
+                        <img src="../assets/images/rehearsal-app/conversation-thread-initial.jpg" />
                     </div>
                 </div>
-
-                <p>
-                    In the original design there was a significant amount of confusion surrounding the difference
-                    between Comments, Prompts, and
-                    Feedback. Comments are a way to leave informal feedback that does not progress the
-                    conversation. Prompts require the learner to record another response and continue
-                    the conversation, and feedback is the official conclusion of the conversation allowing
-                    the mentor to review the learners responses and submit a final score. While commenting
-                    is and action tied to an individual responses and prompting and leaving feedback are tied
-                    to the conversation thread as a whole, I decided display them in the same way in the same location
-                    to better juxtapose their purposes and intended uses. Since commenting is the least
-                    encouraged response it is placed last, hopefully encouraging mentors to prompt and
-                    leave feedback for the their learners.
-                </p>
 
                 <!-- <p>
                     MORE! Design decisions, legacy, what did you change, who the f cares.
@@ -107,42 +103,66 @@
             </div>
 
 
-            <!-- Section // Prototyping -->
+            <!-- Section // Design - Mentoring -->
             <div class="section">
 
-                <h2>Prototyping</h2>
+                <p>
+                    Previously, mentors would consistently type their feedback but forget to publish it. A bright, bold
+                    publish button and an additional warning message should make mentors more aware of the current
+                    publication status and the steps they should take to publish their responses.
+                </p>
 
                 <p>
-                    After completing the UX and Visual Designs, I created a fully functional prototype with
-                    HTML, CSS, and JavaScript. In order to avoid design degradation as much as possible,
-                    I take my prototypes as far as I can, showing every possible state as well as every
-                    animation and interaction. I then passed the prototype on to the front end developers
-                    who converted the prototype to React while preserving as much detail as they can.
+                    Mentors have two options when leaving feedback: typing or recording a response. Previously, both
+                    response options were inline, giving them equal weight. Since the app encourages video responses
+                    from learners, we want to encourage mentors to respond with video as well. In the new design,
+                    the video option is above the text option, giving it greater weight.
+                </p>
+
+                <p>
+                    Previously, there was confusion surrounding the difference between Comments, Prompts, and Feedback.
+                    Comments are a way to leave informal feedback that does not progress the conversation. Prompts
+                    require the learner to record another response and continue the conversation, and feedback is the
+                    official conclusion of the conversation. Since commenting is an action tied to individual responses
+                    and prompting and leaving feedback are tied to the conversation thread as a whole, I decided to
+                    display all three options in the same way in the same location to compare their purposes and
+                    intended uses better. Since commenting is the least recommended action, it is last, hopefully
+                    encouraging mentors to prompt and leave feedback for their learners.
                 </p>
 
                 <div class="image">
-                    <img src="../assets/images/rehearsal-app/laptop_rcom-thread.png"/>
+                    <img src="../assets/images/rehearsal-app/conversation-thread-unpublished-prompt.png" />
                 </div>
             </div>
 
 
-            <!-- Section // Future -->
+            <!-- Section // Prototyping, Usability Testing, and Future -->
             <div class="section">
 
-                <h2>Future</h2>
+                <h2>Prototyping, Usability Testing, and Future</h2>
 
                 <p>
-                    Since this part of the application is so important, we will continue to receive
-                    feedback to use in future iterations. This part of the app has been a pain point
-                    for many users and I hope that the redesign addresses many of the issues users were facing.
-                    Additionally, I hope to design a first time user onboarding experience to help users quickly
-                    become more comfortable with the platform.
+                    After completing the initial UX and visual designs, I created a <a
+                        href="https://invis.io/3MZ4K9L6JS8#/434945208_Assignments" target="_blank">high-fidelity
+                        prototype</a> and usability test plan to test the designs with users internally and externally.
+                    The internal testing went smoothly with no resulting edits. During one external test, I received
+                    major pushback from a customer on a new design for the first time. A typical customer has anywhere
+                    from 50-200 learners in the system. This unhappy customer only has about 5-10 learners in the system
+                    at any time. While this redesign may make his job a bit tougher, we are designing for the common
+                    user, not the fringe one. The rest of the external tests went well with minor resulting edits. This
+                    redesign has not moved into development yet due to business goals, but when the time comes, I will
+                    do the HTML, CSS and some demo Javascript before handing it off to an front-end developer.
                 </p>
+
+                <!-- <div class="image">
+                    <img src="../assets/images/rehearsal-app/laptop_rcom-thread.png" />
+                </div> -->
             </div>
 
         </div>
         <!-- /Details-->
 
     </div>
-  </body>
+</body>
+
 </html>
