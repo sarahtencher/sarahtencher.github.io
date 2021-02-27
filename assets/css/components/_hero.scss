@@ -1,0 +1,30 @@
+/* Hero */
+div.hero{
+    background-color: #657890;
+    color: #FAFAFA;
+    padding-bottom: 40px;
+    text-align: left;
+
+    & + .content{
+        padding-top: 0;
+    }
+
+    h1{
+        @include font-regular;
+        font-size: 32px;
+        margin-bottom: 4px;
+        max-width: 768px;
+        margin: 0 auto 4px;
+        padding-top: 120px;
+    }
+
+    /* Subheading */
+    div.subheading{
+        @include font-regular;
+        font-size: 18px;
+        opacity: .80;
+        margin: auto;
+        max-width: 768px;
+        text-transform: uppercase;
+    }
+}

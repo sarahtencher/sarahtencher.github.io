@@ -27,7 +27,7 @@ body {
 body div.content {
   margin: auto;
   max-width: 1196px;
-  padding: 36px 0 100px;
+  padding: 48px 0 100px;
   width: 95%;
 }
 body p {
@@ -104,25 +104,28 @@ div#home div.details {
   position: relative;
   width: 100%;
   z-index: 2;
-  /* Title */
   /* Subtitle */
+  /* Title */
   /* Description */
   /* Learn More */
-}
-div#home div.details div.title {
-  color: #282829;
-  font-family: "Open Sans", sans-serif;
-  font-weight: 400;
-  font-size: 20px;
-  margin-top: 8px;
 }
 div#home div.details div.subtitle {
   color: #565e66;
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 12px;
   margin-top: 20px;
   text-transform: uppercase;
+}
+div#home div.details div.title {
+  color: #282829;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  margin-top: 4px;
+}
+div#home div.details div.title:hover {
+  color: #436181;
 }
 div#home div.details div.description {
   color: #282829;
@@ -187,25 +190,7 @@ div#home div.details div.learn-more div.arrow {
 div.details {
   margin: auto;
   max-width: 768px;
-  /* Subheading */
   /* Section */
-}
-div.details h1 {
-  color: #282829;
-  font-family: "Open Sans", sans-serif;
-  font-weight: 400;
-  font-size: 32px;
-  margin-bottom: 16px;
-  text-align: center;
-}
-div.details div.subheading {
-  color: #282829;
-  font-family: "Open Sans", sans-serif;
-  font-weight: 400;
-  font-size: 18px;
-  opacity: 0.64;
-  text-align: center;
-  text-transform: uppercase;
 }
 div.details div.section {
   /* Video */
@@ -220,7 +205,7 @@ div.details div.section h2 {
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
   font-size: 22px;
-  margin-bottom: 14px;
+  margin-bottom: 10px;
 }
 div.details div.section p {
   color: #282829;
@@ -358,12 +343,14 @@ div.details div.section div.image._grid:nth-child(4) {
 
 /* Identifier */
 div.about {
+  margin: auto;
+  max-width: 768px;
   /* Profile Picture */
   /* Details */
 }
 div.about div.profile-pic {
   display: inline-block;
-  vertical-align: middle;
+  vertical-align: top;
   width: 240px;
   height: 240px;
 }
@@ -376,8 +363,10 @@ div.about div.profile-pic img {
 div.about div.details {
   display: inline-block;
   margin-left: 40px;
-  vertical-align: middle;
+  vertical-align: top;
   width: calc(100% - 240px - 46px);
+  /* Contact */
+  /* Contact */
 }
 div.about div.details h1 {
   color: #282829;
@@ -395,8 +384,15 @@ div.about div.details p {
   line-height: 24px;
   margin-bottom: 12px;
 }
-div.about div.details div.contact, div.about div.details a.contact {
+div.about div.details div.contact {
   color: #282829;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  margin-top: 4px;
+}
+div.about div.details a.contact {
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
   font-size: 16px;
@@ -431,20 +427,29 @@ div.about div.details div.contact, div.about div.details a.contact {
 }
 /* Header */
 div.header {
-  background-color: #FFF;
-  margin: auto;
-  padding: 16px 0;
-  position: relative;
+  background-color: #657890;
+  margin: 0;
+  padding: 16px 0 0;
+  position: sticky;
   top: 0;
   left: 0;
-  width: 95%;
+  width: 100%;
   z-index: 3;
-  max-width: 1196px;
+  /* Content */
   /* Heading */
   /* Navigation */
+  /* {_full} */
+}
+div.header div.content {
+  border-bottom: 1px solid rgba(250, 250, 250, 0.16);
+  max-width: 768px;
+  margin: auto;
+  padding: 0;
+  position: relative;
+  padding-bottom: 16px;
 }
 div.header a.heading {
-  color: #282829;
+  color: #FAFAFA;
   display: inline-block;
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
@@ -454,6 +459,9 @@ div.header a.heading {
   text-decoration: none;
   vertical-align: middle;
 }
+div.header a.heading:hover {
+  color: #FFF;
+}
 div.header div.navigation {
   display: inline-block;
   padding-top: 9px;
@@ -462,7 +470,7 @@ div.header div.navigation {
   vertical-align: middle;
 }
 div.header div.navigation a {
-  color: #282829;
+  color: #FAFAFA;
   display: inline-block;
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
@@ -473,6 +481,13 @@ div.header div.navigation a {
 }
 div.header div.navigation a + a {
   margin-left: 24px;
+}
+div.header div.navigation a:hover {
+  color: #FFF;
+}
+div.header._full div.content {
+  width: 95%;
+  max-width: 1196px;
 }
 
 /* Responsive */
@@ -501,6 +516,36 @@ div.header div.navigation a + a {
   div.header div.navigation a + a {
     margin-left: 8px;
   }
+}
+
+/* Hero */
+div.hero {
+  background-color: #657890;
+  color: #FAFAFA;
+  padding-bottom: 40px;
+  text-align: left;
+  /* Subheading */
+}
+div.hero + .content {
+  padding-top: 0;
+}
+div.hero h1 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 32px;
+  margin-bottom: 4px;
+  max-width: 768px;
+  margin: 0 auto 4px;
+  padding-top: 120px;
+}
+div.hero div.subheading {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  opacity: 0.8;
+  margin: auto;
+  max-width: 768px;
+  text-transform: uppercase;
 }
 
 /*# sourceMappingURL=index.css.map */
