@@ -185,6 +185,8 @@ div#home div.details div.learn-more div.arrow {
 
 /* Identifier */
 div.details {
+  margin: auto;
+  max-width: 768px;
   /* Subheading */
   /* Section */
 }
