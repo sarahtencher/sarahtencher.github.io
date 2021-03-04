@@ -72,7 +72,10 @@ div#home{
                 font-size: 20px;
                 margin-top: 4px;
 
-                &:hover{  color: #436181  }
+                &:hover{  
+                    color: #436181;
+                    transition: color 286ms ease;
+                }
             }
 
             /* Description */

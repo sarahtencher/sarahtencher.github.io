@@ -51,7 +51,10 @@ div.header{
 
                 & + a{  margin-left: 24px  }
 
-                &:hover{  color: #FFF  }
+                &:hover{  
+                    color: #FFF;
+                    transition: color 286ms ease;
+                }
             }
         }
 
@@ -110,6 +113,23 @@ div.header{
             padding-top: 3px;
 
             a + a{  margin-left: 8px  }
+        }
+
+    }
+
+
+    // 320px
+    @media (max-width: 320px) {
+
+        // Decrease font size and letter spacing.
+        a.heading{
+            font-size: 18px;
+        }
+
+        // Reduce space between links.
+        div.navigation{
+
+            a + a{  margin-left: 6px  }
         }
 
     }
