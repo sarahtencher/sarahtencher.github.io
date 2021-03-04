@@ -1,44 +1,69 @@
 /* Header */
 div.header{
-    background-color: #FFF;
-    margin: auto;
-    padding: 16px 0;
-    position: relative;
+    background-color: #657890;
+    margin: 0;
+    padding: 16px 0 0;
+    position: sticky;
     top: 0; left: 0;
-    width: 95%;
+    width: 100%;
     z-index: 3;
-    max-width: 1196px;
 
-    /* Heading */
-    a.heading{
-        color: $color-base-1;
-        display: inline-block;
-        @include font-regular;
-        font-size: 28px;
-        letter-spacing: 0.2px;
-        text-align: left;
-        text-decoration: none;
-        vertical-align: middle;
+    /* Content */
+    div.content{
+        border-bottom: 1px solid rgba(#FFF, 0.16);
+        max-width: 768px;
+        margin: auto;
+        padding: 0;
+        position: relative;
+        padding-bottom: 16px;
     }
 
-    /* Navigation */
-    div.navigation{
-        display: inline-block;
-        padding-top: 9px;
-        position: absolute;
-        right: 0;
-        vertical-align: middle;
-
-        a{
-            color: $color-base-1;
+        /* Heading */
+        a.heading{
+            color: #FAFAFA;
             display: inline-block;
             @include font-regular;
-            font-size: 14px;
+            font-size: 28px;
+            letter-spacing: 0.2px;
+            text-align: left;
             text-decoration: none;
-            text-transform: uppercase;
             vertical-align: middle;
 
-            & + a{  margin-left: 24px  }
+            &:hover{  color: #FFF  }
+        }
+
+        /* Navigation */
+        div.navigation{
+            display: inline-block;
+            padding-top: 9px;
+            position: absolute;
+            right: 0;
+            vertical-align: middle;
+
+            a{
+                color: #FAFAFA;
+                display: inline-block;
+                @include font-regular;
+                font-size: 14px;
+                text-decoration: none;
+                text-transform: uppercase;
+                vertical-align: middle;
+
+                & + a{  margin-left: 24px  }
+
+                &:hover{  
+                    color: #FFF;
+                    transition: color 286ms ease;
+                }
+            }
+        }
+
+
+    /* {_full} */
+    &._full{
+        div.content{
+            width: 95%;
+            max-width: 1196px;
         }
     }
 }
@@ -88,6 +113,23 @@ div.header{
             padding-top: 3px;
 
             a + a{  margin-left: 8px  }
+        }
+
+    }
+
+
+    // 320px
+    @media (max-width: 320px) {
+
+        // Decrease font size and letter spacing.
+        a.heading{
+            font-size: 18px;
+        }
+
+        // Reduce space between links.
+        div.navigation{
+
+            a + a{  margin-left: 6px  }
         }
 
     }

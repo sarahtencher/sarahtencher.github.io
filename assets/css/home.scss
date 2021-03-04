@@ -56,21 +56,26 @@ div#home{
             width: 100%;
             z-index: 2;
 
-            /* Title */
-            div.title{
-                color: $color-base-1;
-                @include font-regular;
-                font-size: 20px;
-                margin-top: 8px;
-            }
-
             /* Subtitle */
             div.subtitle{
                 color: $color-accent-2;
                 @include font-regular;
-                font-size: 14px;
+                font-size: 12px;
                 margin-top: 20px;
                 text-transform: uppercase;
+            }
+            
+            /* Title */
+            div.title{
+                color: $color-base-1;
+                @include font-semibold;
+                font-size: 20px;
+                margin-top: 4px;
+
+                &:hover{  
+                    color: #436181;
+                    transition: color 286ms ease;
+                }
             }
 
             /* Description */

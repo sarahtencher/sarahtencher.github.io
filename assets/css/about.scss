@@ -1,11 +1,13 @@
 
 /* Identifier */
 div.about{
+    margin: auto;
+    max-width: 768px;
 
     /* Profile Picture */
     div.profile-pic{
         display: inline-block;
-        vertical-align: middle;
+        vertical-align: top;
         width: 240px; height: 240px;
 
         img{
@@ -19,7 +21,7 @@ div.about{
     div.details{
         display: inline-block;
         margin-left: 40px;
-        vertical-align: middle;
+        vertical-align: top;
         width: calc(100% - 240px - 46px);
 
         h1{
@@ -38,8 +40,17 @@ div.about{
             margin-bottom: 12px;
         }
 
-        div.contact, a.contact{
+        /* Contact */
+        div.contact{
             color: $color-base-1;
+            @include font-regular;
+            font-size: 16px;
+            line-height: 24px;
+            margin-top: 4px;
+        }
+
+        /* Contact */
+        a.contact{
             @include font-regular;
             font-size: 16px;
             line-height: 24px;
