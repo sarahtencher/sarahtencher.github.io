@@ -73,7 +73,7 @@ div#home{
                 margin-top: 4px;
 
                 &:hover{  
-                    color: #436181;
+                    color: darken($color: $color-base-1, $amount: 20);
                     transition: color 286ms ease;
                 }
             }

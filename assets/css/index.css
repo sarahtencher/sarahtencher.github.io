@@ -126,7 +126,7 @@ div#home div.details div.title {
   margin-top: 4px;
 }
 div#home div.details div.title:hover {
-  color: #436181;
+  color: black;
   transition: color 286ms ease;
 }
 div#home div.details div.description {
@@ -225,6 +225,9 @@ div.details div.section ul li {
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
+}
+div.details div.section ul.disneylist li + li {
+  margin-top: 12px;
 }
 div.details div.section video {
   margin: 64px auto;
@@ -429,7 +432,7 @@ div.about div.details a.contact {
 }
 /* Header */
 div.header {
-  background-color: #657890;
+  background-color: #242D39;
   margin: 0;
   padding: 16px 0 0;
   position: sticky;
@@ -531,7 +534,7 @@ div.header._full div.content {
 
 /* Hero */
 div.hero {
-  background-color: #657890;
+  background-color: #242D39;
   color: #FAFAFA;
   padding-bottom: 40px;
   text-align: left;
